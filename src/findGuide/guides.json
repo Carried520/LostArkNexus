@@ -1,0 +1,108 @@
+[
+    {
+        "classNames" : ["striker"],
+        "link" : "https://docs.google.com/document/d/1CoxmA9vK13iQw4P0ewf0ZCOpHhJ8FcNbatLsUndrmJQ/edit"
+    },
+    {
+        "classNames" : ["wardancer" , "battlemaster" , "bm"],
+        "link" : "https://bit.ly/WardancerCommunityGuide "
+    },
+    {
+        "classNames" : ["scrapper" , "infighter" , "inf" , "scrap"],
+        "link" : "https://docs.google.com/document/d/1AQ300Di03divMVbRimnp0LmFN7VBQMSBqQaXZP2sDEo/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["soulfist" , "sf"],
+        "link" : "https://docs.google.com/document/d/12IcR8HrywQQhhThnGZxz-Gsq4KryrT5aKggGcgkX9bA/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["glaivier" , "lancemaster" , "lm" , "glaive"],
+        "link" : "https://docs.google.com/document/d/1X6zj1AJBUiYpADNKCIaeJsQYT1IZc8V_2YeXFz-KuYc/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["slayer" , "booba"],
+        "link" : "https://docs.google.com/document/d/1QLzRrhzH-V1u7xIk84Z60QyThY6EDG5Mx6UByD-xlGk/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["berserker" , "zerk" , "zerker"],
+        "link" : "https://docs.google.com/document/d/1QpdFMV-y0tEyxg4GlDxwKprD9li3sgEV3fnSyH_kCqk/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["destroyer" , "destro"],
+        "link" : "https://docs.google.com/document/d/1lh3uX7-3n6rI7uiMFk032dot1fAIu5DVxQKz99X9vX0/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["gunlancer" , "gunlance"],
+        "link" : "https://docs.google.com/document/d/1EPVvtqL_5URvU6H6RP89pWi_0qmo7RJJAsqA4rGuGac/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["paladin" , "pally"],
+        "link" : "https://docs.google.com/document/d/13q48wuWMMJ8bTJHf1ro_xOECS_OOzaEv0y47msJxt4g/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["arcanist" , "arcana"],
+        "link" : "https://docs.google.com/document/d/1MWWgdrTIJBj0WXmAqE4DspVobgMlDx4aaI7ZwCj1-AM/edit#"
+    },
+    {
+        "classNames" : ["summoner" , "summon"],
+        "link" : "https://docs.google.com/document/d/1OePqvZocw3FYPphmUGQpzExeHPK1J7TBncij3w4cyHc/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["sorceress" , "sorc"],
+        "link" : "https://bit.ly/SorceressCommunityGuide"
+    },
+    {
+        "classNames" : ["bard"],
+        "link" : "https://docs.google.com/document/d/1hgR9_xMPaB95NUPgEx0hwgE9vjAQQCeVK6S74ZDnR58/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["gunslinger" , "gs"],
+        "link" : "https://docs.google.com/document/u/4/d/1Dr4egW6_YR7JGkukK-pbPXg3ckbfE31iuMxOSSudD64/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["deadeye" , "de"],
+        "link" : "https://docs.google.com/document/d/1l9SVIATu1PH2QfHHPHJ5vL-VJrwXubn_kgMdAai0_dk/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["artillerist" , "arti" , "artil"],
+        "link" : "https://docs.google.com/document/d/1tCijlx-0S31CBUS_at69RBtzYwu-2rMfXT2A6TbJzh8/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["machinist" , "scouter"],
+        "link" : "https://docs.google.com/document/d/1Nkd1R14ZNVHsyfHCiyw_nd2stA-5PDseNM58dC5gVK0/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["machinist" , "scouter"],
+        "link" : "https://docs.google.com/document/d/1Nkd1R14ZNVHsyfHCiyw_nd2stA-5PDseNM58dC5gVK0/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["sharpshooter" , "ss"],
+        "link" : "https://docs.google.com/document/d/1K3l9Uvgcb6QpJ-A5qccGEhhMRfps8FmU2Ean-lbC5sc/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["shadowhunter" , "sh" , "smoge"],
+        "link" : "https://bit.ly/ShadowhunterCommunityGuide"
+    },
+    {
+        "classNames" : ["deathblade" , "db"],
+        "link" : "https://bit.ly/DeathbladeCommunityGuide"
+    },
+    {
+        "classNames" : ["reaper"],
+        "link" : "https://bit.ly/ReaperCommunityGuide"
+    },
+    {
+        "classNames" : ["souleater"],
+        "link" : "/"
+    },
+    {
+        "classNames" : ["artist"],
+        "link" : "https://docs.google.com/document/d/1OlCBWkiQRt0odr6BoOotxTpzhDcoEAicv8vJdzJIViI/edit?usp=sharing"
+    },
+    {
+        "classNames" : ["aeromancer" , "aero" , "am"],
+        "link" : "https://docs.google.com/document/d/1AiPHCB1oa56fM-l0B8ao-11-JYAdiA3qFtS339Dg3dQ/edit?usp=sharing"
+    }
+    
+    
+]
