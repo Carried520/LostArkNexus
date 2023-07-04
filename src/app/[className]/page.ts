@@ -1,9 +1,11 @@
+'use client'
 import findGuide from "@/findGuide/findGuide";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 
-export default async function ClassRedirect({ params }: { params: { className: string } }){
+export default function ClassRedirect({ params }: { params: { className: string } }){
+    const router = useRouter();
     const guide = findGuide(params.className);
     if(!guide)
     return;
-    redirect(`${guide.link}`);
+    router.push(`${guide.link}`);
 }
