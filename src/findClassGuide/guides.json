@@ -16,7 +16,7 @@
     },
     {
         "className" : "soulfist",
-        "slugs" : ["sf"],
+        "slugs" : ["sf" , "sm", "soulmaster"],
         "link" : "https://docs.google.com/document/d/12IcR8HrywQQhhThnGZxz-Gsq4KryrT5aKggGcgkX9bA/edit?usp=sharing"
     },
     {
@@ -41,7 +41,7 @@
     },
     {
         "className" : "gunlancer",
-        "slugs" : ["gunlance"],
+        "slugs" : ["gunlance" , "warlord"],
         "link" : "https://docs.google.com/document/d/1EPVvtqL_5URvU6H6RP89pWi_0qmo7RJJAsqA4rGuGac/edit?usp=sharing"
     },
     {
@@ -76,7 +76,7 @@
     },
     {
         "className" : "deadeye",
-        "slugs" : ["de"],
+        "slugs" : ["de" , "dh" , "devilhunter"],
         "link" : "https://docs.google.com/document/d/1l9SVIATu1PH2QfHHPHJ5vL-VJrwXubn_kgMdAai0_dk/edit?usp=sharing"
     },
     {
@@ -91,17 +91,17 @@
     },
     {
         "className" : "sharpshooter",
-        "slugs" : ["ss"],
+        "slugs" : ["ss" , "hawkeye"],
         "link" : "https://docs.google.com/document/d/1K3l9Uvgcb6QpJ-A5qccGEhhMRfps8FmU2Ean-lbC5sc/edit?usp=sharing"
     },
     {
         "className" : "shadowhunter",
-        "slugs" : ["sh" , "smoge"],
+        "slugs" : ["sh" , "smoge" , "demonic"],
         "link" : "https://bit.ly/ShadowhunterCommunityGuide"
     },
     {
         "className" : "deathblade",
-        "slugs" : ["db"],
+        "slugs" : ["db" , "blade"],
         "link" : "https://bit.ly/DeathbladeCommunityGuide"
     },
     {
