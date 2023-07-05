@@ -4,11 +4,13 @@ import { notFound, redirect } from "next/navigation";
 
 export default function ClassRedirect({ params }: { params: { className: string } }){
     const guide = findClassGuide(params.className);
-    let link = guide ? guide.link : '';
-    const sheetGuide = findSheetGuide(params.className);
-    link = link == '' && sheetGuide ? sheetGuide.link : ''; 
-    if(link == '')
+    if(guide){
+        redirect(guide.link);
+    }
+    const sheet = findSheetGuide(params.className);
+
+    if(!guide && sheet)
+    redirect(sheet.link);
+    else
         return notFound();
-    
-    redirect(link);
 }
