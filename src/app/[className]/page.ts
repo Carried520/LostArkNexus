@@ -1,11 +1,14 @@
-'use client'
-import findGuide from "@/findGuide/findGuide";
-import { useRouter } from "next/navigation";
+import findClassGuide from "@/findClassGuide/findClassGuide";
+import findSheetGuide from "@/findSheetGuide/findSheetGuide";
+import { redirect } from "next/navigation";
 
 export default function ClassRedirect({ params }: { params: { className: string } }){
-    const router = useRouter();
-    const guide = findGuide(params.className);
-    if(!guide)
-    return;
-    router.push(`${guide.link}`);
+    const guide = findClassGuide(params.className);
+    let link = guide ? guide.link : '';
+    const sheetGuide = findSheetGuide(params.className);
+    link = link == '' && sheetGuide ? sheetGuide.link : ''; 
+    if(link == '')
+        return;
+    
+    redirect(link);
 }
