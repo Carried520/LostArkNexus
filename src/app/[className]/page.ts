@@ -5,6 +5,5 @@ export default function ClassRedirect({ params }: { params: { className: string 
     const guide = findClassGuide(params.className);
     if(!guide)
         return notFound();
-        
     redirect(guide.link);
 }
