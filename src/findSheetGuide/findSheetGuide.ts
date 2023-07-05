@@ -8,7 +8,7 @@ type GuideType = {
 
 export default async function findSheetGuide(guide: string, className: string) {
   const classEntity = guides.find(
-    (item) => item.className == className || item.slugs.includes(className)
+    (item) => item.className.toLowerCase() == className.toLowerCase() || item.slugs.includes(className.toLowerCase())
   );
   if (!classEntity) return undefined;
 
@@ -18,7 +18,7 @@ export default async function findSheetGuide(guide: string, className: string) {
   const guideEntity: GuideType = json
     ? json.default.find(
         (item: { aliases: string[]; name: string }) =>
-          item.name == guide || item.aliases.includes(guide)
+          item.name.toLowerCase() == guide.toLowerCase() || item.aliases.includes(guide.toLowerCase())
       )
     : undefined;
   return guideEntity;

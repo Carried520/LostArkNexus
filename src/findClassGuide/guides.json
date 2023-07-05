@@ -53,13 +53,13 @@
     },
     {
         "className" : "gunlancer",
-        "slugs" : ["gunlance" , "warlord"],
+        "slugs" : ["gunlance" , "warlord" , "gl"],
         "link" : "https://docs.google.com/document/d/1EPVvtqL_5URvU6H6RP89pWi_0qmo7RJJAsqA4rGuGac/edit?usp=sharing",
         "guides" : []
     },
     {
         "className" : "paladin",
-        "slugs" : ["pally"],
+        "slugs" : ["pally" , "holyknight" , "hk"],
         "link" : "https://docs.google.com/document/d/13q48wuWMMJ8bTJHf1ro_xOECS_OOzaEv0y47msJxt4g/edit?usp=sharing",
         "guides" : []
     },
@@ -99,7 +99,7 @@
     },
     {
         "className" : "artillerist",
-        "slugs" : ["arti" , "artil"],
+        "slugs" : ["arti" , "artil" , "blaster"],
         "link" : "https://docs.google.com/document/d/1tCijlx-0S31CBUS_at69RBtzYwu-2rMfXT2A6TbJzh8/edit?usp=sharing",
         "guides" : []
     },
