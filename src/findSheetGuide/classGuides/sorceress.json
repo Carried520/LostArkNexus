@@ -1,0 +1,29 @@
+
+    [
+        {
+            "name" : "sorcfaq",
+            "aliases" : ["faq"],
+            "link" : "https://docs.google.com/document/d/13DKv5_4TEkcpiFVoaKbnN3RLYUZqhHt_-55fJi46oU0"
+        },
+        {
+            "name" : "sorcbracelet",
+            "aliases" : ["bracelet"],
+            "link" : "https://docs.google.com/spreadsheets/d/11FMLZw_s1-D4J5zO7ngzC12K0Y8Exh8x09GDW3Xamc8"
+        },
+        {
+            "name" : "sorcsetup",
+            "aliases" : ["igniter"],
+            "link" : "https://docs.google.com/spreadsheets/d/1a495v8Nx-Yu8bui988VI0tFc9ad8rEh-obYq4b88lU4"
+        },
+        {
+            "name" : "sorcsets",
+            "aliases" : ["sets"],
+            "link" : "https://docs.google.com/document/d/1mWJN9Uf2S8kJ45jaPTFk04JeH8UC1XEKO-ME-JZE39s"
+        },
+        {
+            "name" : "elixirs",
+            "aliases" : [],
+            "link" : "https://docs.google.com/document/d/1H7wcNC3Lbropdzt696u4-pBonagu9aMtyBFvtJMkzCs"
+        }
+        
+    ]

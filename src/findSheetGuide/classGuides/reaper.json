@@ -1,0 +1,17 @@
+[
+    {
+        "name" : "spec-calculator",
+        "aliases" : [],
+        "link" : "https://bit.ly/LVSpecCalc"
+    },
+    {
+        "name" : "bracelet",
+        "aliases" : [],
+        "link" : "https://bit.ly/LunarBraceletCalculator"
+    },
+    {
+        "name" : "retrospective",
+        "aliases" : [],
+        "link" : "https://bit.ly/ReaperRetrospective"
+    }
+]
