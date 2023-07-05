@@ -1,6 +1,6 @@
 import findClassGuide from "@/findClassGuide/findClassGuide";
 import findSheetGuide from "@/findSheetGuide/findSheetGuide";
-import { redirect } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 export default function ClassRedirect({ params }: { params: { className: string } }){
     const guide = findClassGuide(params.className);
@@ -8,7 +8,7 @@ export default function ClassRedirect({ params }: { params: { className: string 
     const sheetGuide = findSheetGuide(params.className);
     link = link == '' && sheetGuide ? sheetGuide.link : ''; 
     if(link == '')
-        return;
+        return notFound();
     
     redirect(link);
 }
