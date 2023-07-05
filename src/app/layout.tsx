@@ -1,6 +1,11 @@
 export const metadata = {
   title: 'Lost Ark Nexus',
   description: 'Lost Ark Nexus',
+  openGraph : {
+    title : 'Lost Ark Nexus',
+    description: '',
+    authors : ['carried' , 'civo']
+  }
 }
 
 export default function RootLayout({
