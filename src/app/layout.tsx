@@ -4,6 +4,8 @@ export const metadata = {
   openGraph : {
     title : 'Lost Ark Nexus',
     description: 'Community Guide Hub supporting dynamic links to guides.',
+    url: 'lostark.nexus',
+    siteName : 'Lost Ark Nexus',
     authors : ['carried' , 'civo']
   }
 }
