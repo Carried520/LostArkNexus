@@ -16,7 +16,7 @@ import {
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
         <img src="/loa-nav.png" style={{ marginRight: '10px' }} />
         <Text
-        fontFamily="heading"
+        fontFamily="Frutiger"
         color="#ffffff"
         fontWeight="600"
         style={{ userSelect: 'none' }}
@@ -64,7 +64,9 @@ import {
     return (
       <Box
         bg="#141418"
-        color="#ffffff">
+        color="#ffffff"
+        fontFamily={"Proxima"}
+        >
         <Container
           as={Stack}
           maxW={'6xl'}

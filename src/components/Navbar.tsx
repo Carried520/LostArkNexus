@@ -3,7 +3,6 @@ import {
     Flex,
     Text,
     IconButton,
-    Button,
     Stack,
     Collapse,
     Icon,
@@ -30,7 +29,6 @@ import {
     return (
       <Box>
         <Flex
-          bg="#141418"
           color="#ffffff"
           minH={'60px'}
           py={{ base: 7 }}
@@ -57,15 +55,15 @@ import {
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-              fontFamily={'heading'}
               color="#ffffff"
+              fontFamily={"ProximaBold"}
               fontWeight = "600"
               fontSize = "24px"
               ml="10px"
               mr="20px"
               style={{ userSelect: 'none' }}
               >
-              Lost Ark Nexus
+              Nexus
             </Text>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -115,7 +113,7 @@ import {
     const linkHoverColor = "#d3d3d3";
   
     return (
-      <Stack direction={'row'} spacing={4}>
+      <Stack direction={'row'} spacing={4} fontFamily={"ProximaBold"}>
         {NAV_ITEMS.map((navItem) => (
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -272,41 +270,6 @@ import {
   }
   
   const NAV_ITEMS: Array<NavItem> = [
-    {
-      label: 'Class Guides',
-      children: [
-        {
-          label: 'Warrior',
-          href: '#',
-          image: '/class-warrior.png',
-        },
-        {
-          label: 'Mage',
-          href: '#',
-          image: '/class-warrior.png',
-        },
-        {
-          label: 'Fighter',
-          href: '#',
-          image: '/class-warrior.png',
-        },
-        {
-          label: 'Gunner',
-          href: '#',
-          image: '/class-warrior.png',
-        },
-        {
-          label: 'Assassin',
-          href: '#',
-          image: '/class-warrior.png',
-        },
-        {
-          label: 'Specialist',
-          href: '#',
-          image: '/class-warrior.png',
-        },
-      ],
-    },
     {
       label: 'About Us',
       href: '#',

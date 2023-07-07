@@ -1,17 +1,9 @@
 import {
   Container,
   Stack,
-  Flex,
-  Box,
   Heading,
   Text,
   Button,
-  Image,
-  Icon,
-  IconButton,
-  createIcon,
-  IconProps,
-  useColorModeValue,
 } from '@chakra-ui/react';
 
 import { FaDiscord } from 'react-icons/fa';
@@ -20,10 +12,7 @@ export default function HeroSection() {
   return (
     <Container
       maxW={'7xl'}
-      bgImage={'/scooter@2x.png'}
-      bgPosition="right"
-      bgSize="35%"
-      bgRepeat="no-repeat"
+      py={"60px"}
     >
       <Stack
         align={'center'}
@@ -40,6 +29,7 @@ export default function HeroSection() {
             <Text
               as={'span'}
               position={'relative'}
+              fontFamily={"Frutiger"}
               _after={{
                 content: "''",
                 width: 'full',
@@ -49,20 +39,22 @@ export default function HeroSection() {
                 left: 0,
                 zIndex: -1,
               }}>
-              Lost Ark <br />
-              Nexus
+              LOST ARK <br />
+              NEXUS
             </Text>
           </Heading>
           <Stack
             spacing={{ base: 4, sm: 6 }}
-            direction={{ base: 'column', sm: 'row' }}>
+            direction={{ base: 'column', sm: 'row' }}
+            fontFamily={"ProximaBold"}
+            
+            >
             <Button
               rounded={'full'}
               size={'lg'}
-              fontWeight={'500'}
               px={6}
-              colorScheme={'red'}
-              bg="#fc9480"
+              bg="#fb9484"
+              color={"#ffffff"}
               _hover={{ bg: 'red.500' }}>
               About Us
             </Button>
@@ -70,10 +62,10 @@ export default function HeroSection() {
               <Button
                 rounded={'full'}
                 size={'lg'}
-                fontWeight={'500'}
+
                 px={6}
-                leftIcon={<FaDiscord color={'gray.300'} />}>
-                Join Us On Discord
+                leftIcon={<FaDiscord color={'gray.300'} style={{ fontSize: '24px' }} />}>
+                Discord
               </Button>
             </a>
           </Stack>
