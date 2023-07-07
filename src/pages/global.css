@@ -6,6 +6,8 @@
 body {
   margin: 0;
   line-height: normal;
+  background-color: #141418;
+  background: "#141418";
 }
 :root {
   /* fonts */
@@ -29,4 +31,5 @@ body {
   /* Paddings */
   --padding-xl: 20px;
   --padding-41xl: 60px;
+  
 }

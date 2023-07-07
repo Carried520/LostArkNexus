@@ -1,6 +1,11 @@
+'use client'
 import type { NextPage } from "next";
 import { useCallback, useEffect } from "react";
 import styles from "./index.module.css";
+
+import HeroSection from "@/components/HeroSection"
+import SubclassSection from "@/components/SubclassSection"
+
 const App1: NextPage = () => {
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
@@ -40,7 +45,13 @@ const App1: NextPage = () => {
   }, []);
 
   return (
-    <div className={styles.app}>
+    <>
+      
+      <HeroSection />
+      <SubclassSection />
+    </>
+
+    /*<div className={styles.app}>
       <div className={styles.mainAppBg1920} />
       <div className={styles.guidesContainer}>
         <div className={styles.classes}>
@@ -171,7 +182,7 @@ const App1: NextPage = () => {
         <img className={styles.vectorIcon1} alt="" src="/vector.svg" />
         <img className={styles.vectorIcon2} alt="" src="/vector.svg" />
       </div>
-    </div>
+    </div>*/
   );
 };
 
