@@ -47,7 +47,7 @@
     },
     {
         "className" : "destroyer",
-        "slugs" : ["destro" , "bonk"],
+        "slugs" : ["destro" , "bonk" , "dt"],
         "link" : "https://docs.google.com/document/d/1lh3uX7-3n6rI7uiMFk032dot1fAIu5DVxQKz99X9vX0/edit?usp=sharing",
         "guides" : []
     },
