@@ -4,6 +4,7 @@ import { useCallback, useEffect } from "react";
 import styles from "./index.module.css";
 
 import HeroSection from "@/components/HeroSection"
+import TempClasses from "@/components/TempClasses"
 
 const App1: NextPage = () => {
   useEffect(() => {
@@ -46,6 +47,7 @@ const App1: NextPage = () => {
   return (
     <>
       <HeroSection />
+      <TempClasses />
     </>
   );
 };

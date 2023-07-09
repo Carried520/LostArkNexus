@@ -268,14 +268,19 @@ import {
     href?: string;
     image?: string;
   }
-  
+
   const NAV_ITEMS: Array<NavItem> = [
     {
+      label: '',
+      href: '#',
+    },
+  ];
+
+  {/*    {
       label: 'About Us',
       href: '#',
     },
     {
       label: 'Submit Content',
       href: '#',
-    },
-  ];
+    }, */}
