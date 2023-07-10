@@ -9,6 +9,7 @@ export const metadata = {
     siteName: "Lost Ark Nexus",
     authors: ["carried", "civo"],
   },
+    
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
