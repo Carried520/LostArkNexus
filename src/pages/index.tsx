@@ -1,17 +1,13 @@
-'use client'
+"use client";
 import type { NextPage } from "next";
 import { useCallback, useEffect } from "react";
 import styles from "./index.module.css";
 
-import HeroSection from "@/components/HeroSection"
+import HeroSection from "@/components/HeroSection";
 import TempClasses from "@/components/TempClasses/TempClasses";
-
-
-const App1: NextPage = () => {
+export default function Home() {
   useEffect(() => {
-    const scrollAnimElements = document.querySelectorAll(
-      "[data-animate-on-scroll]"
-    );
+    const scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
@@ -51,6 +47,5 @@ const App1: NextPage = () => {
       <TempClasses />
     </>
   );
-};
+}
 
-export default App1;
