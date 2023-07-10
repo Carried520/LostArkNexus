@@ -7,9 +7,6 @@ import {
     Collapse,
     Icon,
     Link,
-    Popover,
-    PopoverTrigger,
-    PopoverContent,
     useColorModeValue,
     useBreakpointValue,
     useDisclosure,
@@ -20,8 +17,8 @@ import {
     HamburgerIcon,
     CloseIcon,
     ChevronDownIcon,
-    ChevronRightIcon,
   } from '@chakra-ui/icons';
+import DesktopNav from './DesktopNav';
   
   export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure();
@@ -108,90 +105,6 @@ import {
     );
   }
   
-  const DesktopNav = () => {
-    const linkColor = "#ffffff";
-    const linkHoverColor = "#d3d3d3";
-  
-    return (
-      <Stack direction={'row'} spacing={4} fontFamily={"ProximaBold"}>
-        {NAV_ITEMS.map((navItem) => (
-          <Box key={navItem.label}>
-            <Popover trigger={'hover'} placement={'bottom-start'}>
-              <PopoverTrigger>
-                <Link
-                  p={2}
-                  href={navItem.href ?? '#'}
-                  fontSize={'18px'}
-                  fontWeight={500}
-                  color={linkColor}
-                  _hover={{
-                    textDecoration: 'none',
-                    color: linkHoverColor,
-                  }}>
-                  {navItem.label}
-                </Link>
-              </PopoverTrigger>
-  
-              {navItem.children && (
-                <PopoverContent
-                  width="150px"
-                  border={0}
-                  boxShadow={'xl'}
-                  bg="#373742"
-                  p={4}
-                  fontSize={'14px'}
-                  rounded={'xl'}
-                  >
-                  <Stack>
-                    {navItem.children.map((child) => (
-                      <DesktopSubNav key={child.label} {...child} />
-                    ))}
-                  </Stack>
-                </PopoverContent>
-              )}
-            </Popover>
-          </Box>
-        ))}
-      </Stack>
-    );
-  };
-  
-  const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
-    return (
-      <Link
-        href={href}
-        width="50px"
-        role={'group'}
-        display={'block'}
-        p={2}
-        rounded={'md'}
-        _hover={{ bg: "#373742" }}
-        bg="#373742"
-        >
-        <Stack direction={'row'} align={'center'}>
-          <Box>
-            <Text
-              transition={'all .3s ease'}
-              _groupHover={{ color: "#d3d3d3" }}
-              fontWeight={500}>
-              {label}
-            </Text>
-            <Text fontSize={'sm'}>{subLabel}</Text>
-          </Box>
-          <Flex
-            transition={'all .3s ease'}
-            transform={'translateX(-10px)'}
-            opacity={0}
-            _groupHover={{ opacity: '100%', transform: 'translateX(0)' }}
-            justify={'flex-end'}
-            align={'center'}
-            flex={1}>
-            <Icon color="#d3d3d3" w={5} h={5} as={ChevronRightIcon} />
-          </Flex>
-        </Stack>
-      </Link>
-    );
-  };
   
   const MobileNav = () => {
     return (
