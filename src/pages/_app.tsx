@@ -4,10 +4,9 @@ import type { AppProps } from "next/app";
 import "./global.css";
 
 import { ChakraProvider } from '@chakra-ui/react'
-import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <React.Fragment>
       <Head>
@@ -19,7 +18,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <ChakraProvider>
-        <Navbar />
         <Component {...pageProps} />
         <Footer />
       </ChakraProvider>
@@ -27,4 +25,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MyApp;
+
