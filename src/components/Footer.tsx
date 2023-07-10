@@ -62,8 +62,6 @@ import {
   
   export default function Footer() {
     return (
-      
-      
       <Box
         bg="#141418"
         color="#ffffff"
@@ -78,12 +76,12 @@ import {
           align={'center'}
           bottom={'0'}>
           <Logo />
-          {/* <Stack direction={'row'} spacing={6}>
+          <Stack direction={'row'} spacing={6}>
             <Link href={'#'}>Home</Link>
             <Link href={'#'}>Guides</Link>
             <Link href={'#'}>About Us</Link>
             <Link href={'#'}>Submit Content</Link>
-          </Stack>*/}
+          </Stack>
         </Container>
   
         <Box

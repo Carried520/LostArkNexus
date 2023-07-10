@@ -10,14 +10,10 @@ import { FaDiscord } from 'react-icons/fa';
 
 export default function HeroSection() {
   return (
-  <Container
-    maxW={'7xl'}
-    py={"60px"}
-    bgPosition="right"
-    bgSize="55%"
-    bgRepeat="no-repeat"
-    bgImage={"/bgScouter.png"}
-  >
+    <Container
+      maxW={'7xl'}
+      py={"60px"}
+    >
       <Stack
         align={'center'}
         spacing={{ base: 8, md: 10 }}
@@ -53,7 +49,6 @@ export default function HeroSection() {
             fontFamily={"ProximaBold"}
             
             >
-            {/* 
             <Button
               rounded={'full'}
               size={'lg'}
@@ -62,7 +57,7 @@ export default function HeroSection() {
               color={"#ffffff"}
               _hover={{ bg: 'red.500' }}>
               About Us
-            </Button>*/}
+            </Button>
             <a href="https://discord.gg/lostark">
               <Button
                 rounded={'full'}
