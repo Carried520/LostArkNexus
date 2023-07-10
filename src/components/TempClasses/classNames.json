@@ -1,0 +1,26 @@
+[
+    {
+        "generalClass" : "warrior",
+        "classes" : ["berserker" ,  "gunlancer", "paladin" , "destroyer" , "slayer"]
+    },
+    {
+        "generalClass" : "mage",
+        "classes" : ["summoner" ,  "sorceress", "bard" , "arcanist"]
+    },
+    {
+        "generalClass" : "fighter",
+        "classes" : ["wardancer" ,  "scrapper", "glaivier" , "soulfist" , "striker"]
+    },
+    {
+        "generalClass" : "gunner",
+        "classes" : ["artillerist" ,  "deadeye", "sharpshooter" , "machinist" , "gunslinger"]
+    },
+    {
+        "generalClass" : "assassin",
+        "classes" : ["shadowhunter" ,  "deathblade", "reaper"]
+    },
+    {
+        "generalClass" : "specialist",
+        "classes" : ["artist" ,  "aeromancer"]
+    }
+]
