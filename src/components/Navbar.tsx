@@ -20,7 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass }) => {
         Return to Home
       </button>
       <ul>
-        {classArray.map((classItem: any) => (
+        {classArray.map((classItem: {name : string}) => (
           <li key={classItem.name}>
             <button style={{ color: "white", marginRight: "10px" }} onClick={() => handleButtonClick(classItem)}>
               {classItem.name}
