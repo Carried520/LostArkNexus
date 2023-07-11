@@ -2,7 +2,7 @@ import React from "react";
 import classData from "../data/classData.json";
 
 interface ClassComponentProps {
-  selectedClass: keyof typeof classData;
+  selectedClass: string;
 }
 
 const ClassComponent: React.FC<ClassComponentProps> = ({ selectedClass }) => {
