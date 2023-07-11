@@ -17,9 +17,8 @@ const App: NextPage<AppProps> = () => {
     <>     
       <Navbar selectedClass={selectedClass} setSelectedClass={setSelectedClass} />
       <div>
-        {selectedClass && <ClassComponent selectedClass={selectedClass} />}
+        {selectedClass ? <ClassComponent selectedClass={selectedClass} /> : <HeroSection />}
       </div>   
-      <HeroSection />
     </>
   );
 };
