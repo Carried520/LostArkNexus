@@ -1,0 +1,30 @@
+{
+    "Berserker": {
+        "name": "Berserker",
+        "description": "This is the description for Berserker.",
+        "role": "DPS",
+        "difficulty": "Easy",
+        "range": "Melee"
+    },
+    "Reaper": {
+      "name": "Reaper",
+      "description": "This is the description for Reaper.",
+      "role": "DPS",
+      "difficulty": "Advanced",
+      "range": "Melee"
+    },
+    "Machinist": {
+      "name": "Machinist",
+      "description": "This is the description for Machinist.",
+      "role": "DPS",
+      "difficulty": "Intermediate",
+      "range": "Hybrid"
+    },
+    "Paladin": {
+      "name": "Paladin",
+      "description": "This is the description for Paladin.",
+      "role": "Support",
+      "difficulty": "Easy",
+      "range": "Ranged"
+    }
+  }
