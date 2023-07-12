@@ -23,11 +23,16 @@
   font-family: 'Museo';
   src: url('../fonts/MuseoSans_0.otf') format('opentype');
 }
+@font-face {
+  font-family: 'Lexend Zetta';
+  src: url('../fonts/LexendZetta.ttf') format('truetype');
+}
 body {
   margin: 0;
   line-height: normal;
-  background-color: #141418;
+  background-color: #151518;
   background: "#141418";
+  overflow:hidden;
 }
 :root {
   /* fonts */

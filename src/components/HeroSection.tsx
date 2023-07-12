@@ -1,9 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 import {
   Container,
   Stack,
   Heading,
   Text,
   Button,
+  Box,
 } from '@chakra-ui/react';
 
 import { FaDiscord } from 'react-icons/fa';
@@ -11,9 +13,43 @@ import { FaDiscord } from 'react-icons/fa';
 export default function HeroSection() {
   return (
     <Container
-      maxW={'7xl'}
-      py={"60px"}
-    >
+    maxW={'70%'}
+    minH={'60rem'}
+    py={"60px"}>
+        <Box>
+        <Box
+          pos="absolute" 
+          bgImage={"/BG_Scouter.png"}
+          bgRepeat="no-repeat"
+          bgPosition="center"
+          bgSize='contain'
+          w='100vw'
+          minH='100vh'
+          bottom='10%'
+          zIndex='0'></Box>
+        <Box 
+          pos="absolute" 
+          bg='#fe917c'
+          bgRepeat="no-repeat"
+          bgPosition="center"
+          bgSize='contain'
+          w='33%'
+          minH='80vh'
+          right="20%"
+          zIndex='-1'>
+        </Box>
+        <Box 
+          pos="absolute" 
+          bgImage={"/Gunner_Scouter.png"}
+          bgRepeat="no-repeat"
+          bgSize='contain'
+          w='100%'
+          minH='100vh'
+          bottom='10%'
+          left="40%"
+          zIndex='-1'>
+        </Box>
+        </Box>
       <Stack
         align={'center'}
         spacing={{ base: 8, md: 10 }}
@@ -29,7 +65,7 @@ export default function HeroSection() {
             <Text
               as={'span'}
               position={'relative'}
-              fontFamily={"Frutiger"}
+              fontFamily={"Lexend Zetta"}
               _after={{
                 content: "''",
                 width: 'full',
@@ -72,5 +108,6 @@ export default function HeroSection() {
         </Stack>
       </Stack>
     </Container>
+    
   );
 }
