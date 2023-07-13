@@ -1,5 +1,6 @@
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata : Metadata = {
   title: "Lost Ark Nexus",
   description: "Lost Ark Nexus",
   openGraph: {
@@ -7,8 +8,9 @@ export const metadata = {
     description: "Community Guide Hub supporting dynamic links to guides.",
     url: "lostark.nexus",
     siteName: "Lost Ark Nexus",
-    authors: ["carried", "civo"],
+    authors: ["carried", "poyo" ,  "civo"],
   },
+  metadataBase : new URL("lostark.nexus")
     
 };
 
