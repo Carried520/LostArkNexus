@@ -10,7 +10,7 @@ export const metadata : Metadata = {
     siteName: "Lost Ark Nexus",
     authors: ["carried", "poyo" ,  "civo"],
   },
-  metadataBase : new URL("lostark.nexus")
+  metadataBase : new URL("https://lostark.nexus")
     
 };
 
