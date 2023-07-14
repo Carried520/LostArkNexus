@@ -48,7 +48,7 @@ import {
     return (
       <Box
         bg="#010101"
-        color="#ffffff"
+        color="grey"
         fontFamily={"Proxima"}
         position="fixed"
         bottom='0'
