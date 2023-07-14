@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <meta
           name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width"
+          content="minimum-scale=1, maximum-scale=1, initial-scale=1, width=device-width, user-scalable=no" 
         />
       </Head>
       <ChakraProvider>
