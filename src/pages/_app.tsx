@@ -19,11 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content="minimum-scale=1, initial-scale=1, width=device-width , user-scalable=no"
         />
       </Head>
-      <ChakraProvider>
-        <Navbar />
         <Component {...pageProps} />
-        <Footer />
-      </ChakraProvider>
     </React.Fragment>
   );
 }

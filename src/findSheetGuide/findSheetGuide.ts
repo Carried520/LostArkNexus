@@ -1,5 +1,6 @@
 import guides from "../findClassGuide/guides.json";
 
+
 type GuideType = {
   name: string;
   link: string;
