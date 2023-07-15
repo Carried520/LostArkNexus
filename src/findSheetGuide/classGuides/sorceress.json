@@ -12,7 +12,7 @@
         },
         {
             "name" : "sorcsetup",
-            "aliases" : ["igniter"],
+            "aliases" : ["igniter" , "setup"],
             "link" : "https://docs.google.com/spreadsheets/d/1a495v8Nx-Yu8bui988VI0tFc9ad8rEh-obYq4b88lU4"
         },
         {
