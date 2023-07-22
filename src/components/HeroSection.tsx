@@ -13,7 +13,6 @@ import { FaDiscord } from 'react-icons/fa';
 
 const HeroSection = () => {
   const classes = [
-    { bg: '/BG_Berserker.png', icon: '/Warrior_Berserker.png', color: '#6c4f54', hover: 'hsl(350, 16%, 17%)' },
     { bg: '/BG_Destroyer.png', icon: '/Warrior_Destroyer.png', color: '#23235c', hover: 'hsl(240, 45%, 5%)' },
     { bg: '/BG_Gunlancer.png', icon: '/Warrior_Gunlancer.png', color: '#a6773d', hover: 'hsl(33, 46%, 25%)' },
     { bg: '/BG_Paladin.png', icon: '/Warrior_Paladin.png', color: '#e6c07a', hover: 'hsl(39, 68%, 49%)' },
@@ -35,6 +34,7 @@ const HeroSection = () => {
     { bg: '/BG_Deathblade.png', icon: '/Assassin_Deathblade.png', color: '#6d5f56', hover: 'hsl(23, 12%, 18%)' },
     { bg: '/BG_Reaper.png', icon: '/Assassin_Reaper.png', color: '#af1b1c', hover: 'hsl(360, 73%, 20%)' },
     { bg: '/BG_Shadowhunter.png', icon: '/Assassin_Shadowhunter.png', color: '#471113', hover: 'hsl(358, 61%, 5%)' },
+    { bg: '/BG_Souleater.png', icon: '/Assassin_Souleater.png', color: '#89319a', hover: 'hsl(290,51%,19%)' },
     { bg: '/BG_Aeromancer.png', icon: '/Specialist_Aeromancer.png', color: '#ffc0cb', hover: 'hsl(350, 100%, 68%)' },
     { bg: '/BG_Artist.png', icon: '/Specialist_Artist.png', color: '#8f5855', hover: 'hsl(3, 25%, 25%)' },
   ];
@@ -55,7 +55,7 @@ return (
           bgSize='contain'
           boxSize='100%'
           left='22%'
-          bottom='10%'
+          bottom='8%'
           zIndex='0'>
         </Box>
         <Box 

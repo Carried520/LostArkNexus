@@ -16,7 +16,6 @@ const App: NextPage<AppProps> = () => {
 
   return (
     <>     
-      <Button>Abc</Button>
       <Navbar selectedClass={selectedClass} setSelectedClass={setSelectedClass} />
       <div>
         {selectedClass ? <ClassComponent selectedClass={selectedClass} /> : <HeroSection />}
