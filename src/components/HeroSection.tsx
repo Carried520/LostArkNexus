@@ -45,7 +45,7 @@ const HeroSection = () => {
   });
 
 return (
-  <Container maxW={'85%'} minH={'60rem'} py={"60px"}>
+  <Container suppressHydrationWarning={true} maxW={'85%'} minH={'60rem'} py={"60px"}>
       <Box display='flex'>
         <Box
           pos='absolute' 

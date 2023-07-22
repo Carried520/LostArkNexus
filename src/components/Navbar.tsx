@@ -1,5 +1,5 @@
 "use client"
-import React from "react";
+import React, { useState } from "react";
 import classData from "../data/classData.json";
 import { cn } from "@/lib/utils"
 import {
@@ -59,15 +59,15 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass }) => {
 ListItem.displayName = "ListItem"
   
   return (
-    <NavigationMenu className="border-none">
+    <NavigationMenu>
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-foreground ">Guides</NavigationMenuTrigger>
-            <NavigationMenuContent>
+        <NavigationMenuItem className="!border-none" >
+          <NavigationMenuTrigger>Guides</NavigationMenuTrigger>
+            <NavigationMenuContent  data-state={true} >
 
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-5 lg:w-[600px]">
-              {classArray.map((classItem: {name : string}) => (
-            <Accordion type="single" collapsible>
+              {classArray.map((classItem: {name : string} , index) => (
+            <Accordion key={index.toString()} type="single" collapsible>
                 <AccordionItem value="item-1" className="text-sm leading-tight text-foreground">
                   <AccordionTrigger>Warrior</AccordionTrigger>
                     <AccordionContent>
