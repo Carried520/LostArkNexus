@@ -8,7 +8,7 @@ interface ClassComponentProps {
 const ClassComponent: React.FC<ClassComponentProps> = ({ selectedClass }) => {
   if (!(selectedClass in classData)) return;
   const selectedKey = selectedClass as keyof typeof classData;
-  const { name, description, role, difficulty, range } = classData[selectedKey];
+  const { name, description } = classData[selectedKey];
 
   return (
     <div>
