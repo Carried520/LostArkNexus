@@ -1,30 +1,227 @@
 {
     "Berserker": {
-        "name": "Berserker",
-        "description": "This is the description for Berserker.",
-        "role": "DPS",
-        "difficulty": "Easy",
-        "range": "Melee"
+      "name": "Berserker",
+      "description": "This is the description for Berserker.",
+      "base": "Warrior",
+      "bg": "/BG_Berserker.png",
+      "icon": "/Warrior_Berserker.png",
+      "color": "#6c4f54",
+      "hover": "hsl(350, 16%, 17%)"
     },
-    "Reaper": {
-      "name": "Reaper",
-      "description": "This is the description for Reaper.",
-      "role": "DPS",
-      "difficulty": "Advanced",
-      "range": "Melee"
+    "Destroyer": {
+      "name": "Destroyer",
+      "description": "This is the description for Destroyer.",
+      "base": "Warrior",
+      "bg": "/BG_Destroyer.png",
+      "icon": "/Warrior_Destroyer.png",
+      "color": "#23235c",
+      "hover": "hsl(240, 45%, 5%)"
     },
-    "Machinist": {
-      "name": "Machinist",
-      "description": "This is the description for Machinist.",
-      "role": "DPS",
-      "difficulty": "Intermediate",
-      "range": "Hybrid"
+    "Gunlancer": {
+      "name": "Gunlancer",
+      "description": "This is the description for Gunlancer.",
+      "base": "Warrior",
+      "bg": "/BG_Gunlancer.png",
+      "icon": "/Warrior_Gunlancer.png",
+      "color": "#a6773d",
+      "hover": "hsl(33, 46%, 25%)"
     },
     "Paladin": {
       "name": "Paladin",
       "description": "This is the description for Paladin.",
-      "role": "Support",
-      "difficulty": "Easy",
-      "range": "Ranged"
+      "base": "Warrior",
+      "bg": "/BG_Paladin.png",
+      "icon": "/Warrior_Paladin.png",
+      "color": "#e6c07a",
+      "hover": "hsl(39, 68%, 49%)"
+    },
+    "Slayer": {
+      "name": "Slayer",
+      "description": "This is the description for Slayer.",
+      "base": "Warrior",
+      "bg": "/BG_Slayer.png",
+      "icon": "/Warrior_Slayer.png",
+      "color": "#a3343a",
+      "hover": "hsl(357, 52%, 22%)"
+    },
+    "Arcanist": {
+      "name": "Arcanist",
+      "description": "This is the description for Arcanist.",
+      "base": "Mage",
+      "bg": "/BG_Arcanist.png",
+      "icon": "/Mage_Arcana.png",
+      "color": "#a47adb",
+      "hover": "hsl(266, 57%, 47%)"
+    },
+    "Bard": {
+      "name": "Bard",
+      "description": "This is the description for Bard.",
+      "base": "Mage",
+      "bg": "/BG_Bard.png",
+      "icon": "/Mage_Bard.png",
+      "color": "#51698c",
+      "hover": "hsl(216, 27%, 23%)"
+    },
+    "Sorceress": {
+      "name": "Sorceress",
+      "description": "This is the description for Sorceress.",
+      "base": "Mage",
+      "bg": "/BG_Sorceress.png",
+      "icon": "/Mage_Sorceress.png",
+      "color": "#264294",
+      "hover": "hsl(225, 59%, 16%)"
+    },
+    "Summoner": {
+      "name": "Summoner",
+      "description": "This is the description for Summoner.",
+      "base": "Mage",
+      "bg": "/BG_Summoner.png",
+      "icon": "/Mage_Summoner.png",
+      "color": "#363456",
+      "hover": "hsl(244, 25%, 7%)"
+    },
+    "Glaivier": {
+      "name": "Glaivier",
+      "description": "This is the description for Glaivier.",
+      "base": "Fighter",
+      "bg": "/BG_Glaivier.png",
+      "icon": "/Fighter_Glaivier.png",
+      "color": "#614483",
+      "hover": "hsl(268, 32%, 19%)"
+    },
+    "Scrapper": {
+      "name": "Scrapper",
+      "description": "This is the description for Scrapper.",
+      "base": "Fighter",
+      "bg": "/BG_Scrapper.png",
+      "icon": "/Fighter_Scrapper.png",
+      "color": "#86bd0f",
+      "hover": "hsl(79, 85%, 20%)"
+    },
+    "Soulfist": {
+      "name": "Soulfist",
+      "description": "This is the description for Soulfist.",
+      "base": "Fighter",
+      "bg": "/BG_Soulfist.png",
+      "icon": "/Fighter_Soulfist.png",
+      "color": "#f9a95a",
+      "hover": " hsl(30, 93%, 46%)"
+    },
+    "Striker": {
+      "name": "Striker",
+      "description": "This is the description for Striker.",
+      "base": "Fighter",
+      "bg": "/BG_Striker.png",
+      "icon": "/Fighter_Striker.png",
+      "color": "#a04437",
+      "hover": "hsl(7, 49%, 22%)"
+    },
+    "Wardancer": {
+      "name": "Wardancer",
+      "description": "This is the description for Wardancer.",
+      "base": "Fighter",
+      "bg": "/BG_Wardancer.png",
+      "icon": "/Fighter_Wardancer.png",
+      "color": "#64121e",
+      "hover": "hsl(351, 69%, 3%)"
+    },
+    "Artillerist": {
+      "name": "Artillerist",
+      "description": "This is the description for Artillerist.",
+      "base": "Gunner",
+      "bg": "/BG_Artillerist.png",
+      "icon": "/Gunner_Artillerist.png",
+      "color": "#2d687c",
+      "hover": "hsl(195, 47%, 13%)"
+    },
+    "Deadeye": {
+      "name": "Deadeye",
+      "description": "This is the description for Deadeye.",
+      "base": "Gunner",
+      "bg": "/BG_Deadeye.png",
+      "icon": "/Gunner_Deadeye.png",
+      "color": "#f28a3c",
+      "hover": "hsl(26, 81%, 33%)"
+    },
+    "Gunslinger": {
+      "name": "Gunslinger",
+      "description": "This is the description for Gunslinger.",
+      "base": "Gunner",
+      "bg": "/BG_Gunslinger.png",
+      "icon": "/Gunner_Gunslinger.png",
+      "color": "#6e2f2f",
+      "hover": "hsl(0, 40%, 11%)"
+    },
+    "Machinist": {
+      "name": "Machinist",
+      "description": "This is the description for Machinist.",
+      "base": "Gunner",
+      "bg": "/BG_Scouter.png",
+      "icon": "/Gunner_Scouter.png",
+      "color": "#ff6347",
+      "hover": "hsl(9, 100%, 44%)"
+    },
+    "Sharpshooter": {
+      "name": "Sharpshooter",
+      "description": "This is the description for Sharpshooter.",
+      "base": "Gunner",
+      "bg": "/BG_Sharpshooter.png",
+      "icon": "/Gunner_Sharpshooter.png",
+      "color": "#37a389",
+      "hover": "hsl(166, 50%, 23%)"
+    },
+    "Deathblade": {
+      "name": "Deathblade",
+      "description": "This is the description for Deathblade.",
+      "base": "Assassin",
+      "bg": "/BG_Deathblade.png",
+      "icon": "/Assassin_Deathblade.png",
+      "color": "#6d5f56",
+      "hover": "hsl(23, 12%, 18%)"
+    },
+    "Reaper": {
+      "name": "Reaper",
+      "description": "This is the description for Reaper.",
+      "base": "Assassin",
+      "bg": "/BG_Reaper.png",
+      "icon": "/Assassin_Reaper.png",
+      "color": "#af1b1c",
+      "hover": "hsl(360, 73%, 20%)"
+    },
+    "Shadowhunter": {
+      "name": "Shadowhunter",
+      "description": "This is the description for Shadowhunter.",
+      "base": "Assassin",
+      "bg": "/BG_Shadowhunter.png",
+      "icon": "/Assassin_Shadowhunter.png",
+      "color": "#471113",
+      "hover": "hsl(358, 61%, 5%)"
+    },
+    "Souleater": {
+      "name": "Souleater",
+      "description": "This is the description for Souleater.",
+      "base": "Assassin",
+      "bg": "/BG_Souleater.png",
+      "icon": "/Assassin_Souleater.png",
+      "color": "#89319a",
+      "hover": "hsl(290,51%,19%)"
+    },
+    "Aeromancer": {
+      "name": "Aeromancer",
+      "description": "This is the description for Aeromancer.",
+      "base": "Specialist",
+      "bg": "/BG_Aeromancer.png",
+      "icon": "/Specialist_Aeromancer.png",
+      "color": "#ffc0cb",
+      "hover": "hsl(350, 100%, 68%)"
+    },
+    "Artist": {
+      "name": "Artist",
+      "description": "This is the description for Artist.",
+      "base": "Specialist",
+      "bg": "/BG_Artist.png",
+      "icon": "/Specialist_Artist.png",
+      "color": "#8f5855",
+      "hover": "hsl(3, 25%, 25%)"
     }
   }

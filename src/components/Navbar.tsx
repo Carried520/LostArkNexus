@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from "react";
+import Link from 'next/link';
 import classData from "../data/classData.json";
 import { cn } from "@/lib/utils"
 import {
@@ -17,7 +18,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Separator } from "@/components/ui/separator"
 
 interface NavbarProps {
   setSelectedClass: (selectedClass: string) => void;
@@ -30,52 +30,55 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass }) => {
     else setSelectedClass(classItem);
   };
 
+  const handleNavClick = () => {
+    setSelectedClass('');
+  };
+
   const classArray = Object.values(classData);
+  const categoryMap = classArray.reduce((map, classItem) => {
+    const { base } = classItem;
+    if (!map.has(base)) {
+      map.set(base, [classItem]);
+    } else {
+      map.get(base).push(classItem);
+    }
+    return map;
+  }, new Map());
 
-  const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
   return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  )
-})
-ListItem.displayName = "ListItem"
-  
-  return (
-    <NavigationMenu>
-      <NavigationMenuList>
+    <NavigationMenu className="mx-8 my-4">
+      <NavigationMenuList className="space-x-6">
+        <NavigationMenuItem>
+            <img className={cn("cursor-pointer")} src="/loa-nav.png" onClick={handleNavClick}></img>
+        </NavigationMenuItem>
         <NavigationMenuItem className="!border-none" >
-          <NavigationMenuTrigger>Guides</NavigationMenuTrigger>
-            <NavigationMenuContent  data-state={true} >
-
-              <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-5 lg:w-[600px]">
-              {classArray.map((classItem: {name : string} , index) => (
-            <Accordion key={index.toString()} type="single" collapsible>
-                <AccordionItem value="item-1" className="text-sm leading-tight text-foreground">
-                  <AccordionTrigger>Warrior</AccordionTrigger>
-                    <AccordionContent>
-                      <p className={cn("cursor-pointer hover:underline")} onClick={() => handleButtonClick(classItem)}>{classItem.name}</p>
-                    </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            ))}
+          <NavigationMenuTrigger className="text-foreground">Guides</NavigationMenuTrigger>
+            <NavigationMenuContent data-state={true}>
+              <ul className="grid w-[300px] gap-3 p-4 md:w-[300px] lg:w-[300px]">
+                {Array.from(categoryMap.entries()).map(([category, filteredClasses]) => {
+                  return (
+                    <Accordion
+                      key={category}
+                      type="single"
+                      collapsible
+                    >
+                      <AccordionItem value={category} className="text-sm leading-tight text-foreground">
+                        <AccordionTrigger>{category}</AccordionTrigger>
+                          <AccordionContent>
+                            {filteredClasses.map((filteredClassItem: {name:string}, index: number) => (
+                            <p
+                              key={index.toString()}
+                              className={cn("cursor-pointer hover:underline")}
+                              onClick={() => handleButtonClick(filteredClassItem)}
+                            >
+                              {filteredClassItem.name}
+                            </p>
+                            ))}
+                          </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
+                  );
+                })}
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>

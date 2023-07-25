@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import React, { useState } from "react";
-
+import Link from 'next/link';
 import Navbar from "@/components/Navbar";
 
 import ClassComponent from "@/components/ClassComponent";
@@ -17,8 +17,10 @@ interface AppProps {
 const App: NextPage<AppProps> = () => {
   const [selectedClass, setSelectedClass] = useState<string>('');
   return (
-    <>     
-      <Navbar selectedClass={selectedClass} setSelectedClass={setSelectedClass} />
+    <>
+
+          <Navbar selectedClass={selectedClass} setSelectedClass={setSelectedClass} />
+
       <div>
       
         {selectedClass ? <ClassComponent selectedClass={selectedClass} /> : <HeroSection />}

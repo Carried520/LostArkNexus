@@ -8,40 +8,15 @@ import {
   Box,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-
 import { FaDiscord } from 'react-icons/fa';
+import classData from "../data/classData.json";
 
 const HeroSection = () => {
-  const classes = [
-    { bg: '/BG_Destroyer.png', icon: '/Warrior_Destroyer.png', color: '#23235c', hover: 'hsl(240, 45%, 5%)' },
-    { bg: '/BG_Gunlancer.png', icon: '/Warrior_Gunlancer.png', color: '#a6773d', hover: 'hsl(33, 46%, 25%)' },
-    { bg: '/BG_Paladin.png', icon: '/Warrior_Paladin.png', color: '#e6c07a', hover: 'hsl(39, 68%, 49%)' },
-    { bg: '/BG_Slayer.png', icon: '/Warrior_Slayer.png', color: '#a3343a', hover: 'hsl(357, 52%, 22%)' },
-    { bg: '/BG_Arcanist.png', icon: '/Mage_Arcana.png', color:'#a47adb', hover: 'hsl(266, 57%, 47%)'},
-    { bg: '/BG_Bard.png', icon: '/Mage_Bard.png', color: '#51698c', hover: 'hsl(216, 27%, 23%)' },
-    { bg: '/BG_Sorceress.png', icon: '/Mage_Sorceress.png', color: '#264294', hover: 'hsl(225, 59%, 16%)' },
-    { bg: '/BG_Summoner.png', icon: '/Mage_Summoner.png', color: '#363456', hover: 'hsl(244, 25%, 7%)' },
-    { bg: '/BG_Glaivier.png', icon: '/Fighter_Glaivier.png', color: '#614483', hover: 'hsl(268, 32%, 19%)' },
-    { bg: '/BG_Scrapper.png', icon: '/Fighter_Scrapper.png', color: '#86bd0f', hover: 'hsl(79, 85%, 20%)' },
-    { bg: '/BG_Soulfist.png', icon: '/Fighter_Soulfist.png', color: '#f9a95a', hover: ' hsl(30, 93%, 46%)' },
-    { bg: '/BG_Striker.png', icon: '/Fighter_Striker.png', color: '#a04437', hover: 'hsl(7, 49%, 22%)' },
-    { bg: '/BG_Wardancer.png', icon: '/Fighter_Wardancer.png', color: '#64121e', hover: 'hsl(351, 69%, 3%)' },
-    { bg: '/BG_Artillerist.png', icon: '/Gunner_Artillerist.png', color: '#2d687c', hover: 'hsl(195, 47%, 13%)'},
-    { bg: '/BG_Deadeye.png', icon: '/Gunner_Deadeye.png', color: '#f28a3c', hover: 'hsl(26, 81%, 33%)' },
-    { bg: '/BG_Gunslinger.png', icon: '/Gunner_Gunslinger.png', color: '#6e2f2f', hover: 'hsl(0, 40%, 11%)' },
-    { bg: '/BG_Scouter.png', icon: '/Gunner_Scouter.png', color: '#ff6347', hover: 'hsl(9, 100%, 44%)'},
-    { bg: '/BG_Sharpshooter.png', icon: '/Gunner_Sharpshooter.png', color: '#37a389', hover: 'hsl(166, 50%, 23%)' },
-    { bg: '/BG_Deathblade.png', icon: '/Assassin_Deathblade.png', color: '#6d5f56', hover: 'hsl(23, 12%, 18%)' },
-    { bg: '/BG_Reaper.png', icon: '/Assassin_Reaper.png', color: '#af1b1c', hover: 'hsl(360, 73%, 20%)' },
-    { bg: '/BG_Shadowhunter.png', icon: '/Assassin_Shadowhunter.png', color: '#471113', hover: 'hsl(358, 61%, 5%)' },
-    { bg: '/BG_Souleater.png', icon: '/Assassin_Souleater.png', color: '#89319a', hover: 'hsl(290,51%,19%)' },
-    { bg: '/BG_Aeromancer.png', icon: '/Specialist_Aeromancer.png', color: '#ffc0cb', hover: 'hsl(350, 100%, 68%)' },
-    { bg: '/BG_Artist.png', icon: '/Specialist_Artist.png', color: '#8f5855', hover: 'hsl(3, 25%, 25%)' },
-  ];
+  const classArray = Object.values(classData);
   
   const [randomClass] = useState(() => {
-    const randomClassIndex = Math.floor(Math.random() * classes.length);
-    return classes[randomClassIndex];
+    const randomClassIndex = Math.floor(Math.random() * classArray.length);
+    return classArray[randomClassIndex];
   });
 
 return (
