@@ -1,6 +1,5 @@
 
 import { Metadata } from "next";
-import '../app/styles/globals.css'
 export const metadata : Metadata = {
   title: "Lost Ark Nexus",
   description: "Lost Ark Nexus",
