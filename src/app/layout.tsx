@@ -1,5 +1,4 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar/Navbar";
+import '../styles/globals.css'
 import { Metadata } from "next";
 
 export const metadata : Metadata = {
@@ -18,9 +17,9 @@ export const metadata : Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>
-      {children}
+    <html suppressHydrationWarning lang="en">
+      <body suppressHydrationWarning className="bg-[#141418]">
+            {children}
       </body>
        
     </html>
