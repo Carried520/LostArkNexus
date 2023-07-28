@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import type { AppProps } from "next/app";
 import "../styles/global.css";
+import { Analytics } from '@vercel/analytics/react';
 
 import { ChakraProvider } from '@chakra-ui/react'
 import Footer from "@/components/Footer"
@@ -24,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
         <Footer />
       </ChakraProvider>
+      <Analytics/>
     </React.Fragment>
   );
 }
