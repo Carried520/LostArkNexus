@@ -6,7 +6,19 @@
       "bg": "/BG_Berserker.png",
       "icon": "/Warrior_Berserker.png",
       "color": "#6c4f54",
-      "hover": "hsl(350, 16%, 17%)"
+      "hover": "hsl(350, 16%, 17%)",
+      "links": [
+        {
+          "link": "/berserker",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/berserker/stagger",
+          "linkname": "Stagger Chart",
+          "linkdescription": "This is the stagger chart."
+        }
+      ]
     },
     "Destroyer": {
       "name": "Destroyer",
@@ -69,7 +81,34 @@
       "bg": "/BG_Sorceress.png",
       "icon": "/Mage_Sorceress.png",
       "color": "#264294",
-      "hover": "hsl(225, 59%, 16%)"
+      "hover": "hsl(225, 59%, 16%)",
+      "links": [
+        {
+          "link": "/sorceress",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/sorceress/sorcfaq",
+          "linkname": "FAQ",
+          "linkdescription": "This is the FAQ."
+        },
+        {
+          "link": "/sorceress/sorcbracelet",
+          "linkname": "Bracelet Calculator",
+          "linkdescription": "This is the Bracelet Calculator."
+        },
+        {
+          "link": "/sorceress/sorcsetup",
+          "linkname": "Igniter Setup Calculator",
+          "linkdescription": "This is the Igniter Setup Calculator."
+        },
+        {
+          "link": "/sorceress/sorcsets",
+          "linkname": "Set Overview",
+          "linkdescription": "This is the Sorceress Relic Set Overview."
+        }
+      ]
     },
     "Summoner": {
       "name": "Summoner",

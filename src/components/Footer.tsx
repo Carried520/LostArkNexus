@@ -53,6 +53,7 @@ import {
         position="fixed"
         bottom='0'
         minW='100%'
+        z-index='9999'
         >
   
         <Box>
