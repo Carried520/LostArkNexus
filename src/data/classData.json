@@ -27,6 +27,7 @@
       "bg": "/BG_Destroyer.png",
       "icon": "/Warrior_Destroyer.png",
       "color": "#23235c",
+      "links" : [],
       "hover": "hsl(240, 45%, 5%)"
     },
     "Gunlancer": {
@@ -36,6 +37,7 @@
       "bg": "/BG_Gunlancer.png",
       "icon": "/Warrior_Gunlancer.png",
       "color": "#a6773d",
+      "links" : [],
       "hover": "hsl(33, 46%, 25%)"
     },
     "Paladin": {
@@ -45,6 +47,7 @@
       "bg": "/BG_Paladin.png",
       "icon": "/Warrior_Paladin.png",
       "color": "#e6c07a",
+      "links" : [],
       "hover": "hsl(39, 68%, 49%)"
     },
     "Slayer": {
@@ -54,6 +57,7 @@
       "bg": "/BG_Slayer.png",
       "icon": "/Warrior_Slayer.png",
       "color": "#a3343a",
+      "links" : [],
       "hover": "hsl(357, 52%, 22%)"
     },
     "Arcanist": {
@@ -63,6 +67,7 @@
       "bg": "/BG_Arcanist.png",
       "icon": "/Mage_Arcana.png",
       "color": "#a47adb",
+      "links" : [],
       "hover": "hsl(266, 57%, 47%)"
     },
     "Bard": {
@@ -72,6 +77,7 @@
       "bg": "/BG_Bard.png",
       "icon": "/Mage_Bard.png",
       "color": "#51698c",
+      "links" : [],
       "hover": "hsl(216, 27%, 23%)"
     },
     "Sorceress": {
@@ -117,6 +123,7 @@
       "bg": "/BG_Summoner.png",
       "icon": "/Mage_Summoner.png",
       "color": "#363456",
+      "links" : [],
       "hover": "hsl(244, 25%, 7%)"
     },
     "Glaivier": {
@@ -126,6 +133,7 @@
       "bg": "/BG_Glaivier.png",
       "icon": "/Fighter_Glaivier.png",
       "color": "#614483",
+      "links" : [],
       "hover": "hsl(268, 32%, 19%)"
     },
     "Scrapper": {
@@ -135,6 +143,7 @@
       "bg": "/BG_Scrapper.png",
       "icon": "/Fighter_Scrapper.png",
       "color": "#86bd0f",
+      "links" : [],
       "hover": "hsl(79, 85%, 20%)"
     },
     "Soulfist": {
@@ -144,6 +153,7 @@
       "bg": "/BG_Soulfist.png",
       "icon": "/Fighter_Soulfist.png",
       "color": "#f9a95a",
+      "links" : [],
       "hover": " hsl(30, 93%, 46%)"
     },
     "Striker": {
@@ -153,6 +163,7 @@
       "bg": "/BG_Striker.png",
       "icon": "/Fighter_Striker.png",
       "color": "#a04437",
+      "links" : [],
       "hover": "hsl(7, 49%, 22%)"
     },
     "Wardancer": {
@@ -162,6 +173,7 @@
       "bg": "/BG_Wardancer.png",
       "icon": "/Fighter_Wardancer.png",
       "color": "#64121e",
+      "links" : [],
       "hover": "hsl(351, 69%, 3%)"
     },
     "Artillerist": {
@@ -171,6 +183,7 @@
       "bg": "/BG_Artillerist.png",
       "icon": "/Gunner_Artillerist.png",
       "color": "#2d687c",
+      "links" : [],
       "hover": "hsl(195, 47%, 13%)"
     },
     "Deadeye": {
@@ -180,6 +193,7 @@
       "bg": "/BG_Deadeye.png",
       "icon": "/Gunner_Deadeye.png",
       "color": "#f28a3c",
+      "links" : [],
       "hover": "hsl(26, 81%, 33%)"
     },
     "Gunslinger": {
@@ -189,6 +203,7 @@
       "bg": "/BG_Gunslinger.png",
       "icon": "/Gunner_Gunslinger.png",
       "color": "#6e2f2f",
+      "links" : [],
       "hover": "hsl(0, 40%, 11%)"
     },
     "Machinist": {
@@ -198,6 +213,7 @@
       "bg": "/BG_Scouter.png",
       "icon": "/Gunner_Scouter.png",
       "color": "#ff6347",
+      "links" : [],
       "hover": "hsl(9, 100%, 44%)"
     },
     "Sharpshooter": {
@@ -207,6 +223,7 @@
       "bg": "/BG_Sharpshooter.png",
       "icon": "/Gunner_Sharpshooter.png",
       "color": "#37a389",
+      "links" : [],
       "hover": "hsl(166, 50%, 23%)"
     },
     "Deathblade": {
@@ -216,6 +233,7 @@
       "bg": "/BG_Deathblade.png",
       "icon": "/Assassin_Deathblade.png",
       "color": "#6d5f56",
+      "links" : [],
       "hover": "hsl(23, 12%, 18%)"
     },
     "Reaper": {
@@ -225,6 +243,7 @@
       "bg": "/BG_Reaper.png",
       "icon": "/Assassin_Reaper.png",
       "color": "#af1b1c",
+      "links" : [],
       "hover": "hsl(360, 73%, 20%)"
     },
     "Shadowhunter": {
@@ -234,6 +253,7 @@
       "bg": "/BG_Shadowhunter.png",
       "icon": "/Assassin_Shadowhunter.png",
       "color": "#471113",
+      "links" : [],
       "hover": "hsl(358, 61%, 5%)"
     },
     "Souleater": {
@@ -243,6 +263,7 @@
       "bg": "/BG_Souleater.png",
       "icon": "/Assassin_Souleater.png",
       "color": "#89319a",
+      "links" : [],
       "hover": "hsl(290,51%,19%)"
     },
     "Aeromancer": {
@@ -252,6 +273,7 @@
       "bg": "/BG_Aeromancer.png",
       "icon": "/Specialist_Aeromancer.png",
       "color": "#ffc0cb",
+      "links" : [],
       "hover": "hsl(350, 100%, 68%)"
     },
     "Artist": {
@@ -261,6 +283,7 @@
       "bg": "/BG_Artist.png",
       "icon": "/Specialist_Artist.png",
       "color": "#8f5855",
+      "links" : [],
       "hover": "hsl(3, 25%, 25%)"
     }
   }
