@@ -11,7 +11,19 @@ import { useState } from 'react';
 import { FaDiscord } from 'react-icons/fa';
 import classData from "../data/classData.json";
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  setShowAboutUs: (aboutUs:boolean) => void;
+  showAboutUs: boolean;
+  setShowHeroSection: (aboutUs:boolean) => void;
+  showHeroSection: boolean;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({ setShowAboutUs, showAboutUs, setShowHeroSection, showHeroSection }) => {
+  const handleAboutUsClick = () => {
+    setShowHeroSection(false);
+    setShowAboutUs(true);
+  }
+
   const classArray = Object.values(classData);
   
   const [randomClass] = useState(() => {
@@ -97,7 +109,8 @@ return (
             px={6}
             bg={randomClass.color}
             color={"#ffffff"}
-            _hover={{ bg:randomClass.hover }}>
+            _hover={{ bg:randomClass.hover }}
+            onClick={handleAboutUsClick}>
             About Us
           </Button>
           <a href="https://discord.gg/lostark">

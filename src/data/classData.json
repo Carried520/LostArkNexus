@@ -1,7 +1,7 @@
 {
     "Berserker": {
       "name": "Berserker",
-      "description": "This is the description for Berserker.",
+      "description": "Live out your fantasy of becoming a ferocious greatsword swinging powerhouse by embracing the fury of the Berserker class. Mayhem deals in consistent, high uptime damage, while Berserker's Technique focuses your damage into a short burst window with big numbers.",
       "base": "Warrior",
       "bg": "/BG_Berserker.png",
       "icon": "/Warrior_Berserker.png",
@@ -22,67 +22,113 @@
     },
     "Destroyer": {
       "name": "Destroyer",
-      "description": "This is the description for Destroyer.",
+      "description": "A great class for fans of slow but powerful abilities. Rage Hammer focuses on burst damage and Gravity Release Skills to deal damage. While Gravity Training focuses on hammering down foes, dealing high consistent damage. Both builds are fairly tanky, offering a cozy gameplay that can be rewarded with damage when played well.",
       "base": "Warrior",
       "bg": "/BG_Destroyer.png",
       "icon": "/Warrior_Destroyer.png",
       "color": "#23235c",
-      "links" : [],
-      "hover": "hsl(240, 45%, 5%)"
+      "hover": "hsl(240, 45%, 5%)",
+      "links" : [
+        {
+          "link": "/destroyer",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/destroyer/bracelet",
+          "linkname": "Bracelet Calculator",
+          "linkdescription": "This is the bracelet calculator."
+        }        
+      ]
     },
     "Gunlancer": {
       "name": "Gunlancer",
-      "description": "This is the description for Gunlancer.",
+      "description": "One of the most sought after classes due to their beefcake defensive stats, party cleanse, shields, and two damage synergies. Combat Readiness is considered one of the easiest builds in the game due to near-constant Push Immunity, and mostly non-directional damage skills. Lone Knight, one the other hand, is a frontal attacker with high burst damage and long cooldowns.",
       "base": "Warrior",
       "bg": "/BG_Gunlancer.png",
       "icon": "/Warrior_Gunlancer.png",
       "color": "#a6773d",
-      "links" : [],
-      "hover": "hsl(33, 46%, 25%)"
+      "hover": "hsl(33, 46%, 25%)",
+      "links" : [
+        {
+          "link": "/gunlancer",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/gunlancer/pvp",
+          "linkname": "PvP Guide",
+          "linkdescription": "This is the PvP guide for Gunlancer."
+        }        
+      ]
     },
     "Paladin": {
       "name": "Paladin",
-      "description": "This is the description for Paladin.",
+      "description": "Known as an accessible and budget-friendly class, desired by many raid groups due to being a support. The class boasts remarkable performance with minimal effort required. With naturally high defenses, they are nearly impervious to all but the most devastating attacks. Additionally, their damage buffs contribute significantly to party output, even better than having an additional DPS member.",
       "base": "Warrior",
       "bg": "/BG_Paladin.png",
       "icon": "/Warrior_Paladin.png",
       "color": "#e6c07a",
-      "links" : [],
-      "hover": "hsl(39, 68%, 49%)"
+      "hover": "hsl(39, 68%, 49%)",
+      "links" : [
+        {
+          "link": "/paladin",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        }      
+      ]
     },
     "Slayer": {
       "name": "Slayer",
-      "description": "This is the description for Slayer.",
+      "description": "With the ability to unleash high front-loaded damage in a short amount of time, she excels when entering Burst Mode, being able to unleash her entire kit instantly. In addition to her melee capabilities, she surprises with impressive range compared to other melee characters. Alongside her excellent maneuverability and high movement speed, it becomes easier to chase enemies' rears, making for an extremely competent class.",
       "base": "Warrior",
       "bg": "/BG_Slayer.png",
       "icon": "/Warrior_Slayer.png",
       "color": "#a3343a",
-      "links" : [],
-      "hover": "hsl(357, 52%, 22%)"
+      "hover": "hsl(357, 52%, 22%)",
+      "links" : [
+        {
+          "link": "/slayer",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        }      
+      ]
     },
     "Arcanist": {
       "name": "Arcanist",
-      "description": "This is the description for Arcanist.",
+      "description": "Among the most rewarding classes with enough experience. They are consistently viewed as some of the best DPS you can bring to a party. The Arcanist skill set is often regarded as 'fast-paced', and both identities require you to think on your feet while playing, which is a challenge that some players view as thrilling and fun.",
       "base": "Mage",
       "bg": "/BG_Arcanist.png",
       "icon": "/Mage_Arcana.png",
       "color": "#a47adb",
-      "links" : [],
-      "hover": "hsl(266, 57%, 47%)"
+      "hover": "hsl(266, 57%, 47%)",
+      "links" : [
+        {
+          "link": "/arcanist",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        }      
+      ]
     },
     "Bard": {
       "name": "Bard",
-      "description": "This is the description for Bard.",
+      "description": "Bard is one of the support classes that is very important to have in any raid. They are quintessential in making the raid experience much smoother for everyone in your party, as they offer healing, shielding and enough damage buffs that they can add more damage to your party than a 4th DPS in the party would in any situation.",
       "base": "Mage",
       "bg": "/BG_Bard.png",
       "icon": "/Mage_Bard.png",
       "color": "#51698c",
-      "links" : [],
-      "hover": "hsl(216, 27%, 23%)"
+      "hover": "hsl(216, 27%, 23%)",
+      "links" : [
+        {
+          "link": "/bard",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        }      
+      ]
     },
     "Sorceress": {
       "name": "Sorceress",
-      "description": "This is the description for Sorceress.",
+      "description": "Perfect for the kind of player that likes to be the damage dealer in the party. While this class mostly fulfills a DPS role and gets significantly stronger the more your party plays around you, it has a wide range of builds that vary in flexibility, power and cost. It's a fairly squishy class and it doesn't offer anything special in terms of synergy, but depending on the build you choose, it can somewhat specialize itself on damage, mobility, or utility.",
       "base": "Mage",
       "bg": "/BG_Sorceress.png",
       "icon": "/Mage_Sorceress.png",
@@ -118,172 +164,379 @@
     },
     "Summoner": {
       "name": "Summoner",
-      "description": "This is the description for Summoner.",
+      "description": "Visually, Summoner is stunning and has a unique aesthetic and playstyle when it compares to summon classes in other MMOs. She is much more interactive and self sufficient than the “classic summoner”. She is also a very strong consistent DPS class while also having the benefit of being a non-directional class, allowing her to have easy damage uptime in raids.",
       "base": "Mage",
       "bg": "/BG_Summoner.png",
       "icon": "/Mage_Summoner.png",
       "color": "#363456",
-      "links" : [],
-      "hover": "hsl(244, 25%, 7%)"
+      "hover": "hsl(244, 25%, 7%)",
+      "links" : [
+        {
+          "link": "/summoner",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        }      
+      ]
     },
     "Glaivier": {
       "name": "Glaivier",
-      "description": "This is the description for Glaivier.",
+      "description": "Glaivier is a 'jack of all trades' that has everything in her kit with smooth and stylish animations to complement it. Due to her steroids she has access to very high stats with little investment. Pinnacle has access to many build options and access to ranged skills making her a mostly hybrid non-positional class, while Control has a straightforward, high pace, back attack focused playstyle.",
       "base": "Fighter",
       "bg": "/BG_Glaivier.png",
       "icon": "/Fighter_Glaivier.png",
       "color": "#614483",
-      "links" : [],
-      "hover": "hsl(268, 32%, 19%)"
+      "hover": "hsl(268, 32%, 19%)",
+      "links" : [
+        {
+          "link": "/glaivier",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        }      
+      ]
     },
     "Scrapper": {
       "name": "Scrapper",
-      "description": "This is the description for Scrapper.",
+      "description": "Scrapper offers a straightforward and beginner-friendly playstyle. With simple builds and class identity, it is one of the best DPS classes for beginners. Her stagger, destruction, and mobility are all above average, with her DPS synergy being the only mediocre aspect. The main rotation for a Scrapper is to apply your synergy and then press your damage skills - there is minimal setup required to output damage for this class.",
       "base": "Fighter",
       "bg": "/BG_Scrapper.png",
       "icon": "/Fighter_Scrapper.png",
       "color": "#86bd0f",
-      "links" : [],
-      "hover": "hsl(79, 85%, 20%)"
+      "hover": "hsl(79, 85%, 20%)",
+      "links" : [
+        {
+          "link": "/scrapper",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/scrapper/shock-calc",
+          "linkname": "Shock Engraving Calculator",
+          "linkdescription": "This is the Shock Training Engraving Calculator."
+        }     
+      ]
     },
     "Soulfist": {
       "name": "Soulfist",
-      "description": "This is the description for Soulfist.",
+      "description": "Soulfist is among the highest DPS ceiling classes that offers two distinct play styles: Robust Spirit for slow gameplay with hard-hitting abilities and a powerful Awakening skill, and Energy Overflow for fast-paced dynamic gameplay with high mobility with low cooldowns, which allows for increased skill usage. Additionally, Soulfist provides the party with damage reduction and cleanses.",
       "base": "Fighter",
       "bg": "/BG_Soulfist.png",
       "icon": "/Fighter_Soulfist.png",
       "color": "#f9a95a",
-      "links" : [],
-      "hover": " hsl(30, 93%, 46%)"
+      "hover": " hsl(30, 93%, 46%)",
+      "links" : [
+        {
+          "link": "/soulfist",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/soulfist/dps-archive",
+          "linkname": "DPS Archive",
+          "linkdescription": "This is the Soulfist DPS Archive."
+        },
+        {
+          "link": "/soulfist/robust-spirit",
+          "linkname": "Robust Spirit Guide",
+          "linkdescription": "This is the Robust Spirit Guide."
+        },
+        {
+          "link": "/soulfist/energy-overflow",
+          "linkname": "Energy Overflow Guide",
+          "linkdescription": "This is the Energy Overflow Guide."
+        },
+        {
+          "link": "/soulfist/eo-rotations",
+          "linkname": "Energy Overflow Rotations",
+          "linkdescription": "This is the rotation page for Energy Overflow."
+        }     
+      ]
     },
     "Striker": {
       "name": "Striker",
-      "description": "This is the description for Striker.",
+      "description": "Striker boasts both decent tankiness and great damage potential. This class heavily relies on landing back-attacks, as failing to do so results in a significant loss of damage. However, the tradeoff for this more focused playstyle is a very flashy and rewarding damage and combo payoff. Mastering the art of back-attacks can lead to impressive and satisfying results.",
       "base": "Fighter",
       "bg": "/BG_Striker.png",
       "icon": "/Fighter_Striker.png",
       "color": "#a04437",
-      "links" : [],
-      "hover": "hsl(7, 49%, 22%)"
+      "hover": "hsl(7, 49%, 22%)",
+      "links" : [
+        {
+          "link": "/striker",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/striker/dps-archive",
+          "linkname": "DPS Archive",
+          "linkdescription": "This is the Striker DPS Archive."
+        },
+        {
+          "link": "/soulfist/spec-calculator",
+          "linkname": "Spec Calculator",
+          "linkdescription": "This is the Spec Calculator for Striker."
+        }
+      ]
     },
     "Wardancer": {
       "name": "Wardancer",
-      "description": "This is the description for Wardancer.",
+      "description": "Wardancer in Lost Ark is a bursty and mobile swiftness class. She can also be played with high specialization for heavy hitting power. With one of the best synergies among DPS classes, she provides attack speed and crit rate to her party. Wardancer's gameplay revolves around buff skill durations that greatly increase her damage. While her rotations are straightforward, setting up her builds can be daunting due to small yet relevant details. Chasing back attacks isn't mandatory in most builds and may result in a loss of overall DPS if forced.",
       "base": "Fighter",
       "bg": "/BG_Wardancer.png",
       "icon": "/Fighter_Wardancer.png",
       "color": "#64121e",
-      "links" : [],
-      "hover": "hsl(351, 69%, 3%)"
+      "hover": "hsl(351, 69%, 3%)",
+      "links" : [
+        {
+          "link": "/wardancer",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/soulfist/spec-calculator",
+          "linkname": "Spec Calculator",
+          "linkdescription": "This is the Spec Calculator for Striker."
+        },
+        {
+          "link": "/soulfist/engravings-eso",
+          "linkname": "Esoteric Engraving Setup",
+          "linkdescription": "This is the engraving setups page for Esoteric Skill Enhancement."
+        }
+      ]
     },
     "Artillerist": {
       "name": "Artillerist",
-      "description": "This is the description for Artillerist.",
+      "description": "Artillerist is highly versatile, offering a combination of damage, stagger, destruction, and survivability. With a wide range of skill options for various situations, the gameplay is dynamic. Barrage Enhancement, also known as the wheelchair, allows you to effectively tank enemy patterns while dealing significant damage, while Firepower Enhancement grants you agility and the ability to consistently unleash powerful nukes on your target.",
       "base": "Gunner",
       "bg": "/BG_Artillerist.png",
       "icon": "/Gunner_Artillerist.png",
       "color": "#2d687c",
-      "links" : [],
-      "hover": "hsl(195, 47%, 13%)"
+      "hover": "hsl(195, 47%, 13%)",
+      "links" : [
+        {
+          "link": "/artillerist",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/artillerist/stagger",
+          "linkname": "Stagger Chart",
+          "linkdescription": "This is the stagger chart."
+        }
+      ]
     },
     "Deadeye": {
       "name": "Deadeye",
-      "description": "This is the description for Deadeye.",
+      "description": "Deadeye in Lost Ark is a flashy and mobile class, especially with swiftness, and brings valuable class synergy. It excels in all content and offers a satisfying gameplay experience. You have the option to choose Enhanced Weapon, for  high APM weapon-swapping play style focused on doing incredible bursts of damage, or the Pistoleer build for consistent DPS with dual handguns, steadily whittling down opponents.",
       "base": "Gunner",
       "bg": "/BG_Deadeye.png",
       "icon": "/Gunner_Deadeye.png",
       "color": "#f28a3c",
-      "links" : [],
-      "hover": "hsl(26, 81%, 33%)"
+      "hover": "hsl(26, 81%, 33%)",
+      "links" : [
+        {
+          "link": "/deadeye",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        }
+      ]
     },
     "Gunslinger": {
       "name": "Gunslinger",
-      "description": "This is the description for Gunslinger.",
+      "description": "Gunslinger is a mobile, fun and consistent damage class requiring good positioning and mastery of the weapon stance cycling (Handgun, Shotgun, Rifle) that allows you to have 16 skills at her disposal. Effective play involves quick repositioning, weapon swapping, adaptability and good understanding of boss patterns due to her long cast times and animation locks.",
       "base": "Gunner",
       "bg": "/BG_Gunslinger.png",
       "icon": "/Gunner_Gunslinger.png",
       "color": "#6e2f2f",
-      "links" : [],
-      "hover": "hsl(0, 40%, 11%)"
+      "hover": "hsl(0, 40%, 11%)",
+      "links" : [
+        {
+          "link": "/gunslinger",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/gunslinger/dps-calculator",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the DPS Calculator for Gunslinger." 
+        }
+      ]
     },
     "Machinist": {
       "name": "Machinist",
-      "description": "This is the description for Machinist.",
+      "description": "Machinist is a fast-paced and versatile class. Armed with futuristic weapons, he excels at dealing consistent damage. With Evolutionary Legacy, his focus is on the unique Hypersync transformation, offering reliable sustain damage and decent tankiness. Arthetinean Skill on the other hand primarily focuses on dealing damage in tandem with his trusty drone companion, providing impeccable sustain damage and decent burst capabilities.",
       "base": "Gunner",
       "bg": "/BG_Scouter.png",
       "icon": "/Gunner_Scouter.png",
       "color": "#ff6347",
-      "links" : [],
-      "hover": "hsl(9, 100%, 44%)"
+      "hover": "hsl(9, 100%, 44%)",
+      "links" : [
+        {
+          "link": "/machinist",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/machinist/spec-calculator",
+          "linkname": "Evo Spec Calculator",
+          "linkdescription": "This is the Spec Calculator for Evolutionary Legacy." 
+        },
+        {
+          "link": "/machinist/engravings",
+          "linkname": "Engraving Math",
+          "linkdescription": "This is the Engraving Math sheet for Machinist." 
+        }
+      ]
     },
     "Sharpshooter": {
       "name": "Sharpshooter",
-      "description": "This is the description for Sharpshooter.",
+      "description": "Sharpshooter is a versatile and mobile class excelling in most scenarios. With a bow and his hawk companion by his side, he can deal out massive damage. Loyal Companion focuses on buffing the damage of his fellow hawk companion, keeping it around for longer to augment his personal damage further. Death Strike meanwhile focuses on divebombing and exploding his hawk for massive damage and applying a strong debuff on enemies for a huge 8 second burst window.",
       "base": "Gunner",
       "bg": "/BG_Sharpshooter.png",
       "icon": "/Gunner_Sharpshooter.png",
       "color": "#37a389",
-      "links" : [],
-      "hover": "hsl(166, 50%, 23%)"
+      "hover": "hsl(166, 50%, 23%)",
+      "links" : [
+        {
+          "link": "/sharpshooter",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/sharpshooter/stat-calculator",
+          "linkname": "Stat Calculator",
+          "linkdescription": "This is the Stat Calculator for Sharpshooter." 
+        },
+        {
+          "link": "/sharpshooter/advanced-calculator",
+          "linkname": "Advanced Calculator",
+          "linkdescription": "This is the Advanced Calculator for Sharpshooter." 
+        }
+      ]
     },
     "Deathblade": {
       "name": "Deathblade",
-      "description": "This is the description for Deathblade.",
+      "description": "Deathblade provides the player with hard-hitting abilities, and a fast-paced and smooth rotation with little to no downtime. While both class engravings are easy to play at a basic level, they can offer a higher skill ceiling for those who wish to push the class to the limit. Deathblade has some of the best party synergies as well as damage output in the entire game regardless of your engraving choice. You will not have any problems finding a group with such a powerful class in your hands!",
       "base": "Assassin",
       "bg": "/BG_Deathblade.png",
       "icon": "/Assassin_Deathblade.png",
       "color": "#6d5f56",
-      "links" : [],
-      "hover": "hsl(23, 12%, 18%)"
+      "hover": "hsl(23, 12%, 18%)",
+      "links" : [
+        {
+          "link": "/deathblade",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/deathblade/dps-calculator",
+          "linkname": "DPS Calculator",
+          "linkdescription": "This is the DPS Calculator for Deathblade." 
+        },
+        {
+          "link": "/deathblade/engravings",
+          "linkname": "Engraving Guide",
+          "linkdescription": "This is the Engraving Guide for Deathblade." 
+        }
+      ]
     },
     "Reaper": {
       "name": "Reaper",
-      "description": "This is the description for Reaper.",
+      "description": "Reaper is your archetypal backstabbing assassin class, with extremely fast-paced movement and mobility unmatched by any other class in Lost Ark. She can be played as a hard hitting sustained burst DPS as Lunar Voice, or as a high APM, high DPS piano gameplay class as Hunger. Keep in mind, you will perpetually chase the boss's back with your tools as Reaper's attacks are mostly back attacks.",
       "base": "Assassin",
       "bg": "/BG_Reaper.png",
       "icon": "/Assassin_Reaper.png",
       "color": "#af1b1c",
-      "links" : [],
-      "hover": "hsl(360, 73%, 20%)"
+      "hover": "hsl(360, 73%, 20%)",
+      "links" : [
+        {
+          "link": "/reaper",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/reaper/spec-calculator",
+          "linkname": "Spec Calculator",
+          "linkdescription": "This is the Spec Calculator for Lunar Voice." 
+        },
+        {
+          "link": "/reaper/bracelet",
+          "linkname": "Bracelet Calculator",
+          "linkdescription": "This is the Bracelet Calculator for Lunar Voice." 
+        }
+      ]
     },
     "Shadowhunter": {
       "name": "Shadowhunter",
-      "description": "This is the description for Shadowhunter.",
+      "description": "Shadowhunter has two drastically different builds to pick from, Demonic Impulse is a non-directional, high survivability, and unique transformation build, while Perfect Suppression is a swiftness back attack build that cannot enter the transform state. Both builds are relatively cheap, since one does not require investment in tripods or gems, while the other is a swiftness based off-meta class.",
       "base": "Assassin",
       "bg": "/BG_Shadowhunter.png",
       "icon": "/Assassin_Shadowhunter.png",
       "color": "#471113",
-      "links" : [],
-      "hover": "hsl(358, 61%, 5%)"
+      "hover": "hsl(358, 61%, 5%)",
+      "links" : [
+        {
+          "link": "/shadowhunter",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        },
+        {
+          "link": "/shadowhunter/spec-calc",
+          "linkname": "Spec Calculator",
+          "linkdescription": "This is the Spec Calculator for Demonic Impulse." 
+        },
+        {
+          "link": "/shadowhunter/engravings",
+          "linkname": "Engraving Damage Sheet",
+          "linkdescription": "This is the engravings damage calculator for Demonic Impulse." 
+        }
+      ]
     },
     "Souleater": {
       "name": "Souleater",
-      "description": "This is the description for Souleater.",
+      "description": "The latest scythe wielding Assassin class, Souleater.",
       "base": "Assassin",
       "bg": "/BG_Souleater.png",
       "icon": "/Assassin_Souleater.png",
       "color": "#89319a",
-      "links" : [],
-      "hover": "hsl(290,51%,19%)"
+      "hover": "hsl(290,51%,19%)",
+      "links" : [
+        {
+          "link": "",
+          "linkname": "Under Construction",
+          "linkdescription": "We're still cooking up guides for her."
+        }
+      ]
     },
     "Aeromancer": {
       "name": "Aeromancer",
-      "description": "This is the description for Aeromancer.",
+      "description": "She possesses two distinct sets of skills: Umbrella skills and Weather skills. As a solid and consistent DPS class with impressive burst potential, aeromancer offers two strong engravings, each with its own unique playstyle that is easy to understand. Umbrella skills involve physical attacks using the umbrella. These skills are primarily utilized by Windfury. On the other hand, Weather skills resemble spell-like attacks that Aeromancer casts. These skills are predominantly employed by Drizzle.",
       "base": "Specialist",
       "bg": "/BG_Aeromancer.png",
       "icon": "/Specialist_Aeromancer.png",
       "color": "#ffc0cb",
-      "links" : [],
-      "hover": "hsl(350, 100%, 68%)"
+      "hover": "hsl(350, 100%, 68%)",
+      "links" : [
+        {
+          "link": "/aeromancer",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        }
+      ]
     },
     "Artist": {
       "name": "Artist",
-      "description": "This is the description for Artist.",
+      "description": "Artist enjoys a very dynamic and engaging playstyle. By having nearly every trick up its sleeve and a teammate teleport it ends up having a very satisfying raid experience. Being a good Artist can rely on the player's skill due to needing to constantly aim many of your buffs and utility at your team. She also has an amazing Identity that allows you to have a very consistent and solid damage buff or an individual heal for a lacking teammate and enough damage buffs that they can add more damage to your party than a 4th DPS in the party would.",
       "base": "Specialist",
       "bg": "/BG_Artist.png",
       "icon": "/Specialist_Artist.png",
       "color": "#8f5855",
-      "links" : [],
-      "hover": "hsl(3, 25%, 25%)"
+      "hover": "hsl(3, 25%, 25%)",
+      "links" : [
+        {
+          "link": "/artist",
+          "linkname": "Community Guide",
+          "linkdescription": "This is the community guide."
+        }
+      ]
     }
   }

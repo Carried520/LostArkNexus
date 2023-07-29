@@ -22,16 +22,23 @@ import {
 interface NavbarProps {
   setSelectedClass: (selectedClass: string) => void;
   selectedClass: string;
+  setShowAboutUs: (NavbarProps:boolean) => void;
+  showAboutUs: boolean;
+  setShowHeroSection: (NavbarProps:boolean) => void;
+  showHeroSection: boolean;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass }) => {
+const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass, setShowAboutUs, showAboutUs, setShowHeroSection, showHeroSection }) => {
   const handleButtonClick = (classItem: { name: string } | string) => {
     if (typeof classItem != "string") setSelectedClass(classItem?.name);
     else setSelectedClass(classItem);
+    setShowHeroSection(false);
+    setShowAboutUs(false);
   };
 
   const handleNavClick = () => {
     setSelectedClass('');
+    setShowHeroSection(true);
   };
 
   const classArray = Object.values(classData);
@@ -46,13 +53,13 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass }) => {
   }, new Map());
 
   return (
-    <NavigationMenu className="mx-8 my-4">
-      <NavigationMenuList className="space-x-6">
+    <NavigationMenu className="ml-8 my-6">
+      <NavigationMenuList className="space-x-3">
         <NavigationMenuItem>
             <img className={cn("cursor-pointer")} src="/loa-nav.png" onClick={handleNavClick}></img>
         </NavigationMenuItem>
         <NavigationMenuItem className="!border-none" >
-          <NavigationMenuTrigger className="text-foreground">Guides</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-foreground font-classSubheader text-lg">Guides</NavigationMenuTrigger>
             <NavigationMenuContent data-state={true}>
               <ul className="grid w-[300px] gap-3 p-4 md:w-[300px] lg:w-[300px]">
                 {Array.from(categoryMap.entries()).map(([category, filteredClasses]) => {
@@ -81,6 +88,10 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass }) => {
                 })}
               </ul>
             </NavigationMenuContent>
+          </NavigationMenuItem>
+          <NavigationMenuItem className={`text-foreground font-classSubheader text-lg ${navigationMenuTriggerStyle()}`}>
+            <Link href="/lfg">LFG
+            </Link>
           </NavigationMenuItem>
         </NavigationMenuList>
 
