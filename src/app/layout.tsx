@@ -2,7 +2,7 @@ import Footer from '@/components/Footer';
 import '../styles/globals.css'
 import { Metadata } from "next";
 import Navbar from '@/components/Navbar/Navbar';
-import { Providers } from './Providers';
+
 
 export const metadata : Metadata = {
   title: "Lost Ark Nexus",
