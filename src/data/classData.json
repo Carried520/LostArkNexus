@@ -128,7 +128,7 @@
     },
     "Sorceress": {
       "name": "Sorceress",
-      "description": "Perfect for the kind of player that likes to be the damage dealer in the party. While this class mostly fulfills a DPS role and gets significantly stronger the more your party plays around you, it has a wide range of builds that vary in flexibility, power and cost. It's a fairly squishy class and it doesn't offer anything special in terms of synergy, but depending on the build you choose, it can somewhat specialize itself on damage, mobility, or utility.",
+      "description": "Sorceress is a DPS-focused class excels at dealing damage and becomes stronger when supported by the party. It offers various builds with different levels of flexibility, power, and cost. Although squishy and lacking synergy, it can specialize in damage, mobility, or utility based on the chosen build.",
       "base": "Mage",
       "bg": "/BG_Sorceress.png",
       "icon": "/Mage_Sorceress.png",
@@ -138,7 +138,7 @@
         {
           "link": "/sorceress",
           "linkname": "Community Guide",
-          "linkdescription": "This is the community guide."
+          "linkdescription": "This is the community guide, which offers in-depth explanations and up to date builds for the Sorceress class. "
         },
         {
           "link": "/sorceress/sorcfaq",
@@ -148,17 +148,22 @@
         {
           "link": "/sorceress/sorcbracelet",
           "linkname": "Bracelet Calculator",
-          "linkdescription": "This is the Bracelet Calculator."
+          "linkdescription": "Calculate the value of your bracelet and compare between 2 bracelets."
         },
         {
           "link": "/sorceress/sorcsetup",
           "linkname": "Igniter Setup Calculator",
-          "linkdescription": "This is the Igniter Setup Calculator."
+          "linkdescription": "Compare between 2 setups for Igniter."
         },
         {
           "link": "/sorceress/sorcsets",
           "linkname": "Set Overview",
-          "linkdescription": "This is the Sorceress Relic Set Overview."
+          "linkdescription": "Information to help you understand the differences between Nightmare and Hallucination for Igniter."
+        },
+        {
+          "link": "/sorceress/gauge",
+          "linkname": "Gauge Calculator",
+          "linkdescription": "Calculate how Specialization affects meter gain of skills."
         }
       ]
     },

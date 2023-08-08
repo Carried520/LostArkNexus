@@ -13,6 +13,8 @@ module.exports = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        "xs": "425px",
+        "2xs": "375px",
       },
     },
     extend: {
@@ -77,6 +79,14 @@ module.exports = {
         'classTitle': ['"Lexend Exa"'],
         'classSubheader': ['"Proxima Nova"']
       },
+      screens: {
+        "2xl": "1400px",
+        "xs": "425px",
+        "2xs": "375px",
+      },
+      fontSize: {
+        "2xs":"0.7rem",
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

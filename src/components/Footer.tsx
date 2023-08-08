@@ -59,18 +59,18 @@ import {
         <Box>
           <Container
             as={Stack}
-            maxW={'6xl'}
-            py={4}
+            maxW={'xl'}
+            py={3}
             direction={{ base: 'column', md: 'row' }}
-            spacing={4}
+            spacing={1}
             justify={{ base: 'center', md: 'space-between' }}
             align={{ base: 'center', md: 'center' }}
-            zIndex="1">
-            <Text fontSize="12px" style={{ userSelect: 'none' }}>
+            zIndex={9999}>
+            <Text fontSize="8px"  style={{ userSelect: 'none' }}>
                 © 2023 This website is a fan-made site and is not affiliated with or endorsed by LostArk or its developers.<br />
                 All game-related assets, including images, logos, and trademarks, are the property of LostArk and their respective owners.
             </Text>
-            <Stack direction={'row'} spacing={6}>
+            <Stack direction={'row'} spacing={2}>
               <SocialButton label={'Discord'} href={'https://discord.gg/lostark'}>
                 <FaDiscord />
               </SocialButton>

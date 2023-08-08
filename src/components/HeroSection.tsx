@@ -35,37 +35,39 @@ return (
   <Container suppressHydrationWarning={true} maxW={'85%'} minH={'60rem'} py={"60px"}>
       <Box display='flex'>
         <Box
-          pos='absolute' 
+          pos='fixed' 
           bgImage={randomClass.bg}
           bgRepeat='no-repeat'
           bgPosition='center'
           bgSize='contain'
           boxSize='100%'
           left='22%'
-          bottom='8%'
-          zIndex='0'>
+          bottom='4%'
+          zIndex='0'
+          display={{ base: 'none', xl: 'block' }}>
         </Box>
         <Box 
-          pos='absolute'
+          pos='fixed'
           bg={randomClass.color}
           bgRepeat='no-repeat'
           bgPosition='center'
           bgSize='contain'
           w='40%'
-          h='100%'
-          left='55%'
-          bottom='5%'
+          h='100vh'
+          bottom='0'
+          left={{ base:'85%', lg: '55%' }}
           zIndex='-1'>
         </Box>
         <Box 
-          pos='absolute'
+          pos='fixed'
           bgImage={randomClass.icon}
           bgRepeat='no-repeat'
           bgSize='contain'
           boxSize='90%'
-          bottom='10%'
-          left="49.3%"
-          zIndex='-1'>
+          bottom={{ base:'5%', lg:'10%'}}
+          left={{ base:'55%', lg:"49.3%" }}
+          zIndex='-1'
+          display={{ base: 'none', md: 'block' }}>
         </Box>
       </Box>
     <Stack
@@ -77,7 +79,7 @@ return (
         <Heading
           lineHeight={1.1}
           fontWeight={700}
-          fontSize={{ base: '3xl', sm: '4xl', lg: '8xl' }}
+          fontSize={{ base: '3xl', sm: '4xl', lg: '5xl', xl: '7xl' }}
           color="#ffffff"
           style={{ userSelect: 'none' }}>
           <Text
