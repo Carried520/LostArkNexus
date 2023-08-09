@@ -64,8 +64,10 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass, setSho
             <img className={cn("cursor-pointer")} src="/loa-nav.png" alt="Home" onClick={handleNavClick}></img>
         </NavigationMenuItem>
         <NavigationMenuItem
-          onMouseEnter={() => setMenuOpen(true)}>
-            <NavigationMenuTrigger className="text-foreground font-classSubheader text-lg">
+          onMouseEnter={() => setMenuOpen(true)}
+          onMouseLeave={() => setMenuOpen(false)}
+          onTouchStart={() => setMenuOpen(!menuOpen)}>
+            <NavigationMenuTrigger className="text-foreground font-cla  ssSubheader text-lg">
               Guides
             </NavigationMenuTrigger>
             {menuOpen && (
