@@ -65,7 +65,6 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass, setSho
         </NavigationMenuItem>
         <NavigationMenuItem
           onMouseEnter={() => setMenuOpen(true)}
-          onMouseLeave={() => setMenuOpen(false)}
           onTouchStart={() => setMenuOpen(!menuOpen)}>
             <NavigationMenuTrigger className="text-foreground font-cla  ssSubheader text-lg">
               Guides
