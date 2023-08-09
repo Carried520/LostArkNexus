@@ -43,7 +43,7 @@ const ClassComponent: React.FC<ClassComponentProps> = ({ selectedClass }) => {
               {description}
             </p>
         <Separator className="w-4/5 bg-gray-700 place-self-center" />
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:gap-3 2xs:gap-1 my-5 relative font-body 2xs:mx-2 sm:mx-auto">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:gap-3 2xs:gap-2 my-5 relative font-body 2xs:mx-2 sm:mx-auto">
           {links?.map((linkItem, index) => (
             <React.Fragment key={index}>
               <div className="2xs:border-r-0 2xs:border-b-2 sm:border-b-0 sm:border-r-2 2xs:border-gray-700 px-4 2xs:mx-auto sm:ml-auto sm:mr-0 flex items-center md:text-center">

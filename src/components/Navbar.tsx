@@ -38,6 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass, setSho
 
   const handleNavClick = () => {
     setSelectedClass('');
+    setShowAboutUs(false);
     setShowHeroSection(true);
   };
 
