@@ -3,6 +3,7 @@ import React from "react";
 import classData from "../data/classData.json";
 import { Separator } from "@/components/ui/separator"
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 interface ClassComponentProps {
   selectedClass: string;
@@ -26,7 +27,12 @@ const ClassComponent: React.FC<ClassComponentProps> = ({ selectedClass }) => {
   const { name, description, icon, color, links } = classData[selectedKey];
 
   return (
-<div>
+<motion.div
+  key={selectedClass}
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  exit={{ opacity: 0 }}
+  transition={{ duration: 0.9 }}>
   <div className="grid grid-cols-3 h-screen">
     <div className="sm:col-span-2 2xs:col-span-3 md relative">
       <div className="lg:h-1/3 sm:h-1/5 flex flex-col justify-end items-center">
@@ -67,7 +73,7 @@ const ClassComponent: React.FC<ClassComponentProps> = ({ selectedClass }) => {
       <div className="absolute bottom-0 bg-classbg w-screen lg:h-2/3 md:h-4/5 xs:h-full -z-10"></div>
     </div>
   </div>
-</div>
+</motion.div>
   );
 };
 

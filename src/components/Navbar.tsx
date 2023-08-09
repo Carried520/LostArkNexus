@@ -96,9 +96,6 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass, setSho
             </Link>
           </NavigationMenuItem>
         </NavigationMenuList>
-
-      
-
     </NavigationMenu>
   );
 };

@@ -10,6 +10,7 @@ import {
   } from '@chakra-ui/react';
   import { FaDiscord} from 'react-icons/fa';
   import { ReactNode } from 'react';
+  import { motion } from 'framer-motion';
   
   const SocialButton = ({
     children,
@@ -46,6 +47,11 @@ import {
   
   export default function Footer() {
     return (
+    <motion.div  
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.9 }}>
       <Box
         bg="#010101"
         color="grey"
@@ -78,5 +84,7 @@ import {
           </Container>
         </Box>
       </Box>
+    </motion.div>
+
     );
   }

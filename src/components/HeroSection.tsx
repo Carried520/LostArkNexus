@@ -10,6 +10,7 @@ import {
 import { useState } from 'react';
 import { FaDiscord } from 'react-icons/fa';
 import classData from "../data/classData.json";
+import { motion } from 'framer-motion';
 
 interface HeroSectionProps {
   setShowAboutUs: (aboutUs:boolean) => void;
@@ -32,6 +33,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ setShowAboutUs, showAboutUs, 
   });
 
 return (
+<motion.div  
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  exit={{ opacity: 0 }}
+  transition={{ duration: 0.9 }}>  
   <Container suppressHydrationWarning={true} maxW={'85%'} minH={'60rem'} py={"60px"}>
       <Box display='flex'>
         <Box
@@ -129,6 +135,7 @@ return (
       </Stack>
     </Stack>
   </Container>
+</motion.div>
   )
 };
 

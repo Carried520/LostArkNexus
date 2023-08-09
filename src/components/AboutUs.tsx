@@ -1,7 +1,13 @@
 import React from "react";
+import { motion } from 'framer-motion';
 
 const AboutUs: React.FC = () => {
   return (
+  <motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  exit={{ opacity: 0 }}
+  transition={{ duration: 0.9 }}>
     <div className="bg-070709 flex justify-center items-center">
       <div className="text-white flex flex-col items-center">
         <h2 className="text-2xl font-bold mb-4">About Us</h2>
@@ -24,6 +30,7 @@ const AboutUs: React.FC = () => {
         </div>
       </div>
     </div>
+  </motion.div>
   );
 };
 
