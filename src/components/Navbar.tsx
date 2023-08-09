@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
-import React, { useState } from "react";
+import React from "react";
 import Link from 'next/link';
 import classData from "../data/classData.json";
 import { cn } from "@/lib/utils"
@@ -8,7 +8,6 @@ import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,

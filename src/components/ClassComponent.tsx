@@ -2,6 +2,7 @@
 import React from "react";
 import classData from "../data/classData.json";
 import { Separator } from "@/components/ui/separator"
+import { FaLink } from 'react-icons/fa'
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
@@ -53,8 +54,10 @@ const ClassComponent: React.FC<ClassComponentProps> = ({ selectedClass }) => {
           {links?.map((linkItem, index) => (
             <React.Fragment key={index}>
               <div className="2xs:border-r-0 2xs:border-b-2 sm:border-b-0 sm:border-r-2 2xs:border-gray-700 px-4 2xs:mx-auto sm:ml-auto sm:mr-0 flex items-center md:text-center">
-                <p className="text-white xl:text-sm 2xs:text-xs text-center hover:underline font-medium m-auto">
+                <p className="text-white xl:text-sm 2xs:text-xs text-center hover:underline font-medium m-auto flex items-center">
+                  <FaLink className="mr-2" />
                   <Link href={linkItem.link} target="_blank">{linkItem.linkname}</Link>
+                  
                 </p>
               </div>
               <div className="lg:col-span-2 lg:mr-30 sm:mr-auto sm:ml-0 2xs:mx-auto pl-2">
