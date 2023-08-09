@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import React, { useState } from "react";
 import Link from 'next/link';
@@ -57,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass, setSho
     <NavigationMenu className="ml-8 my-6">
       <NavigationMenuList className="space-x-3">
         <NavigationMenuItem>
-            <img className={cn("cursor-pointer")} src="/loa-nav.png" onClick={handleNavClick}></img>
+            <img className={cn("cursor-pointer")} src="/loa-nav.png" alt="Home" onClick={handleNavClick}></img>
         </NavigationMenuItem>
         <NavigationMenuItem className="!border-none" >
           <NavigationMenuTrigger className="text-foreground font-classSubheader text-lg">Guides</NavigationMenuTrigger>

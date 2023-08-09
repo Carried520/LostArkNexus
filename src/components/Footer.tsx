@@ -49,7 +49,7 @@ import {
       <Box
         bg="#010101"
         color="grey"
-        fontFamily={"Proxima"}
+        fontFamily={"Nunito Sans"}
         position="fixed"
         bottom='0'
         minW='100%'
@@ -59,14 +59,14 @@ import {
         <Box>
           <Container
             as={Stack}
-            maxW={'xl'}
+            maxW={'2xl'}
             py={3}
             direction={{ base: 'column', md: 'row' }}
             spacing={1}
             justify={{ base: 'center', md: 'space-between' }}
             align={{ base: 'center', md: 'center' }}
             zIndex={9999}>
-            <Text fontSize="8px"  style={{ userSelect: 'none' }}>
+            <Text fontSize="9px"  style={{ userSelect: 'none' }}>
                 © 2023 This website is a fan-made site and is not affiliated with or endorsed by LostArk or its developers.<br />
                 All game-related assets, including images, logos, and trademarks, are the property of LostArk and their respective owners.
             </Text>
