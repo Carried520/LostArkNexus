@@ -88,7 +88,11 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass, setSho
                                 onClick={() => {
                                 handleButtonClick(filteredClassItem);
                                 setMenuOpen(false);
-                              }}>
+                                }}
+                                onTouchEnd={() => {
+                                  handleButtonClick(filteredClassItem);
+                                  setMenuOpen(false);
+                                }}>
                                 {filteredClassItem.name}
                               </p>
                             ))}
