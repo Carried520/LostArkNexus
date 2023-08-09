@@ -77,7 +77,7 @@ module.exports = {
         'body': ['"Fira Sans"'],
         'display': ['"Lexend Zetta"'],
         'classTitle': ['"Lexend Exa"'],
-        'classSubheader': ['"Proxima Nova"']
+        'classSubheader': ['"Nunito Sans"']  
       },
       screens: {
         "2xl": "1400px",
