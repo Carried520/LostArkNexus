@@ -62,7 +62,7 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass, setSho
     <NavigationMenu className="ml-8 my-6">
       <NavigationMenuList className="space-x-3">
         <NavigationMenuItem>
-            <Image fill className={cn("cursor-pointer object-cover relative")} src="/loa-nav.png" alt="Home" onClick={handleNavClick}/>
+            <Image loading='eager' priority fill className={cn("cursor-pointer object-cover relative")} src="/loa-nav.png" alt="Home" onClick={handleNavClick}/>
         </NavigationMenuItem>
         <NavigationMenuItem
           onMouseEnter={() => setMenuOpen(true)}
