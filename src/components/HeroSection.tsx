@@ -6,10 +6,13 @@ import {
   Text,
   Button,
   Box,
+  chakra,
 } from '@chakra-ui/react';
 import { FaDiscord } from 'react-icons/fa';
 import classData from "../data/classData.json";
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useRef } from 'react';
 
 interface HeroSectionProps {
   setShowAboutUs: (aboutUs:boolean) => void;
@@ -24,9 +27,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ setShowAboutUs, showAboutUs, 
     setShowAboutUs(true);
   }
 
-  const classArray = Object.values(classData);
-  const randomClass = classArray[Math.floor(Math.random() * classArray.length)];
   
+  
+  const classArray = Object.values(classData);
+  const randomClassRef = useRef(classArray[Math.floor(Math.random() * classArray.length)]);
+  const randomClass = randomClassRef.current;
 return (
 <motion.div  
   initial={{ opacity: 0 }}
@@ -35,18 +40,27 @@ return (
   transition={{ duration: 0.9 }}>  
   <Container suppressHydrationWarning={true} maxW={'85%'} minH={'60rem'} py={"60px"}>
       <Box display='flex'>
-        <Box
-          pos='fixed' 
-          bgImage={randomClass.bg}
-          bgRepeat='no-repeat'
-          bgPosition='center'
-          bgSize='contain'
-          boxSize='100%'
-          left='22%'
-          bottom='4%'
-          zIndex='0'
-          display={{ base: 'none', xl: 'block' }}>
-        </Box>
+      <Box
+      pos='fixed' 
+      bgRepeat='no-repeat'
+      bgPosition='center'
+      bgSize='contain'
+      boxSize='100%'
+      left='22%'
+      bottom='4%'
+      zIndex='0'
+      display={{ base: 'none', xl: 'block' }}>
+      <Image
+        className='object-contain'
+        priority
+        loading='eager'
+        src={randomClass.bg}
+        alt={randomClass.name}
+        fill
+        
+        quality={100}
+      />
+    </Box>
         <Box 
           pos='fixed'
           bg={randomClass.color}

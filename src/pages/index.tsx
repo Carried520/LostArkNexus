@@ -23,7 +23,7 @@ const App: NextPage<AppProps> = () => {
   return (
     <>
 
-          <Navbar selectedClass={selectedClass} setSelectedClass={setSelectedClass} showAboutUs={showAboutUs} setShowAboutUs={setShowAboutUs} showHeroSection={showHeroSection} setShowHeroSection={setShowHeroSection} />
+      <Navbar selectedClass={selectedClass} setSelectedClass={setSelectedClass} showAboutUs={showAboutUs} setShowAboutUs={setShowAboutUs} showHeroSection={showHeroSection} setShowHeroSection={setShowHeroSection} />
 
       <div>
         {showHeroSection && <HeroSection showAboutUs={showAboutUs} setShowAboutUs={setShowAboutUs} showHeroSection={showHeroSection} setShowHeroSection={setShowHeroSection} />}
