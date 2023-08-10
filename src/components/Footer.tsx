@@ -2,7 +2,6 @@ import {
     Box,
     chakra,
     Container,
-    Link,
     Stack,
     Text,
     useColorModeValue,
@@ -11,7 +10,7 @@ import {
   import { FaDiscord} from 'react-icons/fa';
   import { ReactNode } from 'react';
   import { motion } from 'framer-motion';
-  
+
   const SocialButton = ({
     children,
     label,

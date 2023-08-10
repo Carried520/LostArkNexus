@@ -1,26 +1,17 @@
-/* eslint-disable @next/next/no-img-element */
+
 import React from "react";
 import classData from "../data/classData.json";
 import { Separator } from "@/components/ui/separator"
 import { FaLink } from 'react-icons/fa'
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Image from "next/image";
 
 interface ClassComponentProps {
   selectedClass: string;
 }
 
-interface ClassData {
-  name: string;
-  description: string;
-  icon: string;
-  color: string;
-  hover: string;
-  links?: {
-    link: string;
-    linkdescription: string;
-  }[];
-}
+
 
 const ClassComponent: React.FC<ClassComponentProps> = ({ selectedClass }) => {
   if (!(selectedClass in classData)) return;
@@ -70,7 +61,7 @@ const ClassComponent: React.FC<ClassComponentProps> = ({ selectedClass }) => {
     </div>
     
     <div className="relative 2xs:hidden sm:block">
-      <img className="absolute h-5/6 w-5/6 object-contain z-10 inset-0 right-10 xl:translate-x-20 lg:translate-x-14 md:translate-x-12" src={icon} alt="" />
+      <Image priority fill className="absolute h-5/6 w-5/6 object-contain z-10 inset-0 right-10 xl:translate-x-20 lg:translate-x-14 md:translate-x-12" src={icon} alt="" />
       <div className="lg:h-1/3 md:h-1/5 sm:h-1/6 xs:h-fit"></div>
       <div className="sm:skew-x-12 xs:skew-x-0 h-screen w-screen -z-20 transform xs:translate-x-20 sm:translate-x-20 xl:translate-x-20" style={{backgroundColor: color}}></div>
       <div className="absolute bottom-0 bg-classbg w-screen lg:h-2/3 md:h-4/5 xs:h-full -z-10"></div>

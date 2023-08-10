@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+
 import {
   Container,
   Stack,
@@ -7,7 +7,6 @@ import {
   Button,
   Box,
 } from '@chakra-ui/react';
-import { useState } from 'react';
 import { FaDiscord } from 'react-icons/fa';
 import classData from "../data/classData.json";
 import { motion } from 'framer-motion';
@@ -26,12 +25,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ setShowAboutUs, showAboutUs, 
   }
 
   const classArray = Object.values(classData);
+  const randomClass = classArray[Math.floor(Math.random() * classArray.length)];
   
-  const [randomClass] = useState(() => {
-    const randomClassIndex = Math.floor(Math.random() * classArray.length);
-    return classArray[randomClassIndex];
-  });
-
 return (
 <motion.div  
   initial={{ opacity: 0 }}

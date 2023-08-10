@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -18,6 +18,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import Image from 'next/image';
 
 interface NavbarProps {
   setSelectedClass: (selectedClass: string) => void;
@@ -61,7 +62,7 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass, setSho
     <NavigationMenu className="ml-8 my-6">
       <NavigationMenuList className="space-x-3">
         <NavigationMenuItem>
-            <img className={cn("cursor-pointer")} src="/loa-nav.png" alt="Home" onClick={handleNavClick}></img>
+            <Image fill className={cn("cursor-pointer object-cover relative")} src="/loa-nav.png" alt="Home" onClick={handleNavClick}/>
         </NavigationMenuItem>
         <NavigationMenuItem
           onMouseEnter={() => setMenuOpen(true)}
