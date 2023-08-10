@@ -9,26 +9,26 @@
 
 @font-face {
   font-family: 'ProximaBold';
-  src: url('../fonts/Proxima_Nova_Bold.otf') format('opentype');
+  src: url('/fonts/Proxima_Nova_Bold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Proxima';
-  src: url('../fonts/Proxima_Nova_Semibold.otf') format('opentype');
+  src: url('/fonts/Proxima_Nova_Semibold.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Frutiger';
-  src: url('../fonts/FrutigerBlack.otf') format('opentype');
+  src: url('/fonts/FrutigerBlack.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Museo';
-  src: url('../fonts/MuseoSans_0.otf') format('opentype');
+  src: url('/fonts/MuseoSans_0.otf') format('opentype');
 }
 @font-face {
   font-family: 'Lexend Zetta';
-  src: url('../fonts/LexendZetta.ttf') format('truetype');
+  src: url('/fonts/LexendZetta.ttf') format('truetype');
 }
 body {
   margin: 0;
