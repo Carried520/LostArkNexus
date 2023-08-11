@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import AboutUs from "@/components/AboutUs";
 import ClassComponent from "@/components/ClassComponent/ClassComponent";
 import HeroSection from "@/components/HeroSection/HeroSection";
@@ -12,14 +12,22 @@ export default function Page() {
 
   return (
     <>
-
-      <Navbar selectedClass={selectedClass} setSelectedClass={setSelectedClass} showAboutUs={showAboutUs} setShowAboutUs={setShowAboutUs} showHeroSection={showHeroSection} setShowHeroSection={setShowHeroSection} />
+      <Navbar
+        selectedClass={selectedClass}
+        setSelectedClass={setSelectedClass}
+        showAboutUs={showAboutUs}
+        setShowAboutUs={setShowAboutUs}
+        showHeroSection={showHeroSection}
+        setShowHeroSection={setShowHeroSection}
+      />
 
       <div>
-        {showHeroSection && <HeroSection showAboutUs={showAboutUs} setShowAboutUs={setShowAboutUs} showHeroSection={showHeroSection} setShowHeroSection={setShowHeroSection} />}
+        {showHeroSection && (
+          <HeroSection showAboutUs={showAboutUs} setShowAboutUs={setShowAboutUs} showHeroSection={showHeroSection} setShowHeroSection={setShowHeroSection} />
+        )}
         {showAboutUs && <AboutUs />}
         {!showHeroSection && !showAboutUs && <ClassComponent selectedClass={selectedClass} />}
-      </div>   
+      </div>
     </>
   );
 }
