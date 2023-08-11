@@ -1,16 +1,17 @@
+'use client'
+
 import {
     Box,
-    chakra,
+    Button,
     Container,
-    Link,
     Stack,
     Text,
-    useColorModeValue,
     VisuallyHidden,
   } from '@chakra-ui/react';
   import { FaDiscord} from 'react-icons/fa';
   import { ReactNode } from 'react';
-  
+  import { motion } from 'framer-motion';
+
   const SocialButton = ({
     children,
     label,
@@ -21,8 +22,8 @@ import {
     href: string;
   }) => {
     return (
-      <chakra.button
-        bg="#ffffff"
+      <Button
+        className='bg-[#ffffff]'
         color="#141418"
         rounded={'full'}
         w={30}
@@ -35,21 +36,26 @@ import {
         justifyContent={'center'}
         transition={'background 0.3s ease'}
         _hover={{
-          bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+          bg: 'blackAlpha.200',
           color: "#ffffff"
         }}>
         <VisuallyHidden>{label}</VisuallyHidden>
         {children}
-      </chakra.button>
+      </Button>
     );
   };
   
   export default function Footer() {
     return (
+    <motion.div  
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.9 }}>
       <Box
         bg="#010101"
         color="grey"
-        fontFamily={"Proxima"}
+        fontFamily={"Nunito Sans"}
         position="fixed"
         bottom='0'
         minW='100%'
@@ -59,18 +65,18 @@ import {
         <Box>
           <Container
             as={Stack}
-            maxW={'6xl'}
-            py={4}
+            maxW={'2xl'}
+            py={3}
             direction={{ base: 'column', md: 'row' }}
-            spacing={4}
+            spacing={1}
             justify={{ base: 'center', md: 'space-between' }}
             align={{ base: 'center', md: 'center' }}
-            zIndex="1">
-            <Text fontSize="12px" style={{ userSelect: 'none' }}>
+            zIndex={9999}>
+            <Text fontSize="9px"  style={{ userSelect: 'none' }}>
                 © 2023 This website is a fan-made site and is not affiliated with or endorsed by LostArk or its developers.<br />
                 All game-related assets, including images, logos, and trademarks, are the property of LostArk and their respective owners.
             </Text>
-            <Stack direction={'row'} spacing={6}>
+            <Stack direction={'row'} spacing={2}>
               <SocialButton label={'Discord'} href={'https://discord.gg/lostark'}>
                 <FaDiscord />
               </SocialButton>
@@ -78,5 +84,7 @@ import {
           </Container>
         </Box>
       </Box>
+    </motion.div>
+
     );
   }

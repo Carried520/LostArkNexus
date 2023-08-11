@@ -7,12 +7,15 @@ module.exports = {
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
 	],
+  important : true,
   theme: {
     container: {
       center: true,
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        "xs": "425px",
+        "2xs": "375px",
       },
     },
     extend: {
@@ -75,8 +78,16 @@ module.exports = {
         'body': ['"Fira Sans"'],
         'display': ['"Lexend Zetta"'],
         'classTitle': ['"Lexend Exa"'],
-        'classSubheader': ['"Proxima Nova"']
+        'classSubheader': ['"Nunito Sans"']  
       },
+      screens: {
+        "2xl": "1400px",
+        "xs": "425px",
+        "2xs": "375px",
+      },
+      fontSize: {
+        "2xs":"0.7rem",
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
