@@ -12,6 +12,7 @@
   src: url('/fonts/Proxima_Nova_Bold.otf') format('opentype');
 }
 
+
 @font-face {
   font-family: 'Proxima';
   src: url('/fonts/Proxima_Nova_Semibold.otf') format('opentype');
@@ -30,6 +31,9 @@
   font-family: 'Lexend Zetta';
   src: url('/fonts/LexendZetta.ttf') format('truetype');
 }
+
+
+
 body {
   margin: 0;
   line-height: normal;
