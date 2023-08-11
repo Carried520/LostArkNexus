@@ -276,7 +276,7 @@
           "linkdescription": "This is the Striker DPS Archive."
         },
         {
-          "link": "/soulfist/spec-calculator",
+          "link": "/striker/spec-calculator",
           "linkname": "Spec Calculator",
           "linkdescription": "This is the Spec Calculator for Striker."
         }
@@ -297,12 +297,12 @@
           "linkdescription": "This is the community guide."
         },
         {
-          "link": "/soulfist/spec-calculator",
+          "link": "/wardancer/spec-calculator",
           "linkname": "Spec Calculator",
           "linkdescription": "This is the Spec Calculator for Striker."
         },
         {
-          "link": "/soulfist/engravings-eso",
+          "link": "/wardancer/engravings-eso",
           "linkname": "Esoteric Engraving Setup",
           "linkdescription": "This is the engraving setups page for Esoteric Skill Enhancement."
         }
