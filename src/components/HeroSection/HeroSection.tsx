@@ -1,9 +1,9 @@
 'use client'
+import dynamic from "next/dynamic";
 import classData from "../../data/classData.json";
+import HeroSectionImages from "./HeroSectionImages";
 import HeroSectionRoot from './HeroSectionRoot';
-import HeroSectionContent from './HeroSectionContent';
-import HeroSectionImages from './HeroSectionImages';
-
+import {useRef} from 'react'
 
 interface HeroSectionProps {
   setShowAboutUs: (aboutUs:boolean) => void;
@@ -11,9 +11,12 @@ interface HeroSectionProps {
   setShowHeroSection: (aboutUs:boolean) => void;
   showHeroSection: boolean;
 }
-const HeroSection: React.FC<HeroSectionProps> = ({ setShowAboutUs, showAboutUs, setShowHeroSection, showHeroSection }) => {
+
+export default function HeroSection({ setShowAboutUs, showAboutUs, setShowHeroSection, showHeroSection } : HeroSectionProps){
   const classArray = Object.values(classData);
-  const randomClass = classArray[Math.floor(Math.random() * classArray.length)];
+  const randomClassRef = useRef(classArray[Math.floor(Math.random() * classArray.length)]);
+  const randomClass = randomClassRef.current;
+  const HeroSectionContent = dynamic(() => import('./HeroSectionContent') , {ssr : false});
 
 return (
     <HeroSectionRoot>
@@ -22,6 +25,6 @@ return (
       </HeroSectionContent>
     </HeroSectionRoot>
   )
-};
+}
 
-export default HeroSection;
+
