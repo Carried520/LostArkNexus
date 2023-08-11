@@ -1,30 +1,35 @@
-import Footer from '@/components/Footer';
-import '../styles/globals.css'
 import { Metadata } from "next";
-import Navbar from '@/components/Navbar/Navbar';
-
-
-export const metadata : Metadata = {
+import "../styles/globals.css";
+import "../pages/global.css";
+import Footer from "@/components/Footer";
+import Providers from "@/components/Providers";
+export const metadata: Metadata = {
   title: "Lost Ark Nexus",
   description: "Lost Ark Nexus",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
   openGraph: {
     title: "Lost Ark Nexus",
     description: "Community Guide Hub supporting dynamic links to guides.",
     url: "lostark.nexus",
     siteName: "Lost Ark Nexus",
-    authors: ["carried", "poyo" ,  "civo"],
+    authors: ["carried", "poyo", "civo"],
   },
-  metadataBase : new URL("https://lostark.nexus")
-    
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html suppressHydrationWarning lang="en">
-      <body suppressHydrationWarning className="bg-[#141418]">
-            {children}
+    <html>
+      <body style={{ backgroundColor: "#141418" }}>
+        <Providers>
+          {children}
+          <Footer />
+        </Providers>
       </body>
-       
     </html>
   );
 }
