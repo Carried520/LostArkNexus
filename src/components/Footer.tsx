@@ -2,11 +2,10 @@
 
 import {
     Box,
-    chakra,
+    Button,
     Container,
     Stack,
     Text,
-    useColorModeValue,
     VisuallyHidden,
   } from '@chakra-ui/react';
   import { FaDiscord} from 'react-icons/fa';
@@ -23,8 +22,8 @@ import {
     href: string;
   }) => {
     return (
-      <chakra.button
-        bg="#ffffff"
+      <Button
+        className='bg-[#ffffff]'
         color="#141418"
         rounded={'full'}
         w={30}
@@ -37,12 +36,12 @@ import {
         justifyContent={'center'}
         transition={'background 0.3s ease'}
         _hover={{
-          bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+          bg: 'blackAlpha.200',
           color: "#ffffff"
         }}>
         <VisuallyHidden>{label}</VisuallyHidden>
         {children}
-      </chakra.button>
+      </Button>
     );
   };
   

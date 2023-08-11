@@ -1,3 +1,6 @@
+/* 
+  Disclaimer it is legacy file please head to app folder and edit page.tsx to edit current home page
+*/
 import type { NextPage } from "next";
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";

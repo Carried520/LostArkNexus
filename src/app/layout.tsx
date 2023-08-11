@@ -3,7 +3,8 @@ import { Metadata } from "next";
 import '../styles/globals.css'
 import '../pages/global.css'
 import Footer from "@/components/Footer";
-import { Providers } from "@/components/Providers";
+import dynamic from "next/dynamic";
+import Providers from "@/components/Providers";
 export const metadata : Metadata = {
   title: "Lost Ark Nexus",
   description: "Lost Ark Nexus",
@@ -22,6 +23,8 @@ export const metadata : Metadata = {
   },
     
 };
+
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
