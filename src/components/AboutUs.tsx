@@ -19,12 +19,8 @@ const AboutUs: React.FC = () => {
               <p className="text-gray-300">Developer</p>
             </div>
             <div className="mx-4">
-              <h3 className="text-xl font-semibold">poyo</h3>
+              <h3 className="text-xl font-semibold">Poyo</h3>
               <p className="text-gray-300">Developer</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold">Civo</h3>
-              <p className="text-gray-300">Karma Farmer</p>
             </div>
           </div>
         </div>
