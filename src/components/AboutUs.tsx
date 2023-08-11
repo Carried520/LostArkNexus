@@ -1,4 +1,6 @@
+'use client'
 import React from "react";
+import '../styles/globals.css'
 import { motion } from 'framer-motion';
 
 const AboutUs: React.FC = () => {

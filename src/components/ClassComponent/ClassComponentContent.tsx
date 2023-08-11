@@ -1,31 +1,21 @@
-
-import React from "react";
-import classData from "../data/classData.json";
+import classData from "../../data/classData.json";
 import { Separator } from "@/components/ui/separator"
 import { FaLink } from 'react-icons/fa'
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 import Image from "next/image";
+import React from "react";
 
-interface ClassComponentProps {
-  selectedClass: string;
+type ContentProps = {
+    selectedClass : string
 }
 
 
 
-const ClassComponent: React.FC<ClassComponentProps> = ({ selectedClass }) => {
-  if (!(selectedClass in classData)) return;
+export default function ClassComponentContent({selectedClass} : ContentProps){
+    if (!(selectedClass in classData)) return;
   const selectedKey = selectedClass as keyof typeof classData;
   const { name, description, icon, color, links } = classData[selectedKey];
-
-  return (
-<motion.div
-  key={selectedClass}
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  exit={{ opacity: 0 }}
-  transition={{ duration: 0.9 }}>
-  <div className="grid grid-cols-3 h-screen">
+    return <div className="grid grid-cols-3 h-screen">
     <div className="sm:col-span-2 2xs:col-span-3 md relative">
       <div className="lg:h-1/3 sm:h-1/5 flex flex-col justify-end items-center">
         <p className="text-white text-xl font-classTitle uppercase lg:text-6xl md:text-5xl sm:text-4xl xs:text-4xl">
@@ -67,8 +57,4 @@ const ClassComponent: React.FC<ClassComponentProps> = ({ selectedClass }) => {
       <div className="absolute bottom-0 bg-classbg w-screen lg:h-2/3 md:h-4/5 xs:h-full -z-10"></div>
     </div>
   </div>
-</motion.div>
-  );
-};
-
-export default ClassComponent;
+}

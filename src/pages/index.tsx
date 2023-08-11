@@ -1,13 +1,12 @@
 import type { NextPage } from "next";
 import React, { useState } from "react";
-import Link from 'next/link';
 import Navbar from "@/components/Navbar";
 import AboutUs from "@/components/AboutUs";
-import ClassComponent from "@/components/ClassComponent";
+import ClassComponent from "@/components/ClassComponent/ClassComponent";
 import dynamic from "next/dynamic";
 
 const HeroSection = dynamic(
-  () => import("@/components/HeroSection").then((component) => component.default),
+  () => import("@/components/HeroSection/HeroSection").then((component) => component.default),
   { loading: () => <div>Loading...</div>, ssr: false }
 );
  
