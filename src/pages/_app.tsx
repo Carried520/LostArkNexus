@@ -5,16 +5,14 @@ import "./global.css";
 import '../styles/globals.css'
 
 import { ChakraProvider } from '@chakra-ui/react'
-import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <React.Fragment>
-       <Head>
+      <Head>
         <title>Lost Ark Nexus</title>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <meta name="description" content="Community Guide Hub" />
         <meta
           name="viewport"
           content="minimum-scale=1, maximum-scale=1, initial-scale=1, width=device-width, user-scalable=no" 
@@ -27,5 +25,3 @@ function MyApp({ Component, pageProps }: AppProps) {
     </React.Fragment>
   );
 }
-
-export default MyApp;
