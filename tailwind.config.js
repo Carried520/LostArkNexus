@@ -7,12 +7,15 @@ module.exports = {
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
 	],
+  important : true,
   theme: {
     container: {
       center: true,
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        "xs": "425px",
+        "2xs": "375px",
       },
     },
     extend: {
@@ -50,6 +53,7 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        classbg: "#070709"
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -70,6 +74,20 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        'body': ['"Fira Sans"'],
+        'display': ['"Lexend Zetta"'],
+        'classTitle': ['"Lexend Exa"'],
+        'classSubheader': ['"Nunito Sans"']  
+      },
+      screens: {
+        "2xl": "1400px",
+        "xs": "425px",
+        "2xs": "375px",
+      },
+      fontSize: {
+        "2xs":"0.7rem",
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
