@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
 
   return (
     <NavigationMenu className="ml-8 my-6">
-      <NavigationMenuList className="space-x-3">
+      <NavigationMenuList  className="space-x-3">
         <NavigationMenuItem className="relative">
           <Image
             sizes="(min-width: 1200px) 100%"
@@ -46,10 +46,10 @@ const Navbar: React.FC = () => {
             onClick={() => router.push('/')}
           />
         </NavigationMenuItem>
-        <NavigationMenuItem onMouseEnter={() => setMenuOpen(true)} onTouchStart={() => setMenuOpen(!menuOpen)}>
+        <NavigationMenuItem  onMouseEnter={() => setMenuOpen(true)} onTouchStart={() => setMenuOpen(!menuOpen)}>
           <NavigationMenuTrigger onPointerMove={(e) => e.preventDefault()} onPointerLeave={(e) => e.preventDefault()} className="text-foreground font-cla  ssSubheader text-lg">Guides</NavigationMenuTrigger>
           {menuOpen && (
-            <NavigationMenuContent data-state={menuOpen}>
+            <NavigationMenuContent onPointerMove={(e) => e.preventDefault()} onPointerLeave={(e) => e.preventDefault()}  data-state={menuOpen}>
               <ul className="grid w-[300px] gap-3 p-4 md:w-[300px] lg:w-[300px]">
                 {Array.from(categoryMap.entries()).map(([category, filteredClasses]) => (
                   <Accordion key={category} type="single" collapsible>
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
           )}
         </NavigationMenuItem>
 
-        <NavigationMenuItem className={`text-foreground font-classSubheader text-lg ${navigationMenuTriggerStyle()}`}>
+        <NavigationMenuItem  className={`text-foreground font-classSubheader text-lg ${navigationMenuTriggerStyle()}`}>
           <Link href="/lfg">LFG</Link>
         </NavigationMenuItem>
       </NavigationMenuList>
