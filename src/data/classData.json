@@ -299,7 +299,7 @@
         {
           "link": "/wardancer/spec-calculator",
           "linkname": "Spec Calculator",
-          "linkdescription": "This is the Spec Calculator for Striker."
+          "linkdescription": "This is the Spec Calculator for Wardancer."
         },
         {
           "link": "/wardancer/engravings-eso",
@@ -361,7 +361,7 @@
         },
         {
           "link": "/gunslinger/dps-calculator",
-          "linkname": "Community Guide",
+          "linkname": "DPS Calculator",
           "linkdescription": "This is the DPS Calculator for Gunslinger." 
         }
       ]
