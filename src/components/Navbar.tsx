@@ -67,7 +67,7 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass, setSho
           />
         </NavigationMenuItem>
         <NavigationMenuItem onMouseEnter={() => setMenuOpen(true)} onTouchStart={() => setMenuOpen(!menuOpen)}>
-          <NavigationMenuTrigger className="text-foreground font-cla  ssSubheader text-lg">Guides</NavigationMenuTrigger>
+          <NavigationMenuTrigger onPointerMove={(e) => e.preventDefault()} onPointerLeave={(e) => e.preventDefault()} className="text-foreground font-cla  ssSubheader text-lg">Guides</NavigationMenuTrigger>
           {menuOpen && (
             <NavigationMenuContent data-state={menuOpen}>
               <ul className="grid w-[300px] gap-3 p-4 md:w-[300px] lg:w-[300px]">
