@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import classData from "../data/classData.json";
 import { cn } from "@/lib/utils";
@@ -13,31 +13,11 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Image from "next/image";
+import {useRouter } from "next/navigation";
 
-interface NavbarProps {
-  setSelectedClass: (selectedClass: string) => void;
-  selectedClass: string;
-  setShowAboutUs: (NavbarProps: boolean) => void;
-  showAboutUs: boolean;
-  setShowHeroSection: (NavbarProps: boolean) => void;
-  showHeroSection: boolean;
-}
 
-const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass, setShowAboutUs, showAboutUs, setShowHeroSection, showHeroSection }) => {
-  const handleButtonClick = (classItem: { name: string } | string) => {
-    if (typeof classItem != "string") setSelectedClass(classItem?.name);
-    else setSelectedClass(classItem);
-    setShowHeroSection(false);
-    setShowAboutUs(false);
-    setMenuOpen(false);
-  };
-
-  const handleNavClick = () => {
-    setSelectedClass("");
-    setShowAboutUs(false);
-    setShowHeroSection(true);
-    setMenuOpen(false);
-  };
+const Navbar: React.FC = () => {
+  const router = useRouter();
 
   const [menuOpen, setMenuOpen] = React.useState(false);
 
@@ -63,7 +43,7 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass, setSho
             className={cn("cursor-pointer object-cover relative")}
             src="/loa-nav.png"
             alt="Home"
-            onClick={handleNavClick}
+            onClick={() => router.push('/')}
           />
         </NavigationMenuItem>
         <NavigationMenuItem onMouseEnter={() => setMenuOpen(true)} onTouchStart={() => setMenuOpen(!menuOpen)}>
@@ -81,11 +61,11 @@ const Navbar: React.FC<NavbarProps> = ({ setSelectedClass, selectedClass, setSho
                             key={index.toString()}
                             className={cn("cursor-pointer hover:underline")}
                             onClick={() => {
-                              handleButtonClick(filteredClassItem);
+                              router.push(`/guides/${filteredClassItem.name}`)
                               setMenuOpen(false);
                             }}
                             onTouchEnd={() => {
-                              handleButtonClick(filteredClassItem);
+                              router.push(`/guides/${filteredClassItem.name}`)
                               setMenuOpen(false);
                             }}
                           >

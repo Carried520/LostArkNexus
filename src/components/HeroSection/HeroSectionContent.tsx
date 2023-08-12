@@ -1,5 +1,6 @@
 "use client";
 import { Button, Container, Heading, Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import { FaDiscord } from "react-icons/fa";
 
 type randomClassType = {
@@ -17,26 +18,14 @@ type randomClassType = {
   }[];
 };
 type HeroSectionContentProps = {
-  setShowAboutUs: (aboutUs: boolean) => void;
-  showAboutUs: boolean;
-  setShowHeroSection: (aboutUs: boolean) => void;
-  showHeroSection: boolean;
   children: React.ReactNode;
   randomClass: randomClassType;
 };
 
 export default function HeroSectionContent({
-  setShowAboutUs,
-  showAboutUs,
-  setShowHeroSection,
-  showHeroSection,
   children,
   randomClass,
 }: HeroSectionContentProps) {
-  const handleAboutUsClick = () => {
-    setShowHeroSection(false);
-    setShowAboutUs(true);
-  };
 
   return (
     <Container maxW={"85%"} minH={"60rem"} py={"60px"}>
@@ -70,7 +59,9 @@ export default function HeroSectionContent({
               bg={randomClass.color}
               color={"#ffffff"}
               _hover={{ bg: randomClass.hover }}
-              onClick={handleAboutUsClick}
+              //onClick={handleAboutUsClick}
+              as={Link}
+              href='/AboutUs'
             >
               About Us
             </Button>

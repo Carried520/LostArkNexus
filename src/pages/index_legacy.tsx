@@ -18,20 +18,13 @@ interface AppProps {
 }
 
 const App: NextPage<AppProps> = () => {
-  const [selectedClass, setSelectedClass] = useState<string>('');
-  const [showHeroSection, setShowHeroSection] = useState<boolean>(true);
-  const [showAboutUs, setShowAboutUs] = useState<boolean>(false);
+ 
 
   return (
     <>
-
-      <Navbar selectedClass={selectedClass} setSelectedClass={setSelectedClass} showAboutUs={showAboutUs} setShowAboutUs={setShowAboutUs} showHeroSection={showHeroSection} setShowHeroSection={setShowHeroSection} />
-
       <div>
-        {showHeroSection && <HeroSection showAboutUs={showAboutUs} setShowAboutUs={setShowAboutUs} showHeroSection={showHeroSection} setShowHeroSection={setShowHeroSection} />}
-        {showAboutUs && <AboutUs />}
-        {!showHeroSection && !showAboutUs && <ClassComponent selectedClass={selectedClass} />}
-      </div>   
+        <HeroSection />
+      </div>
     </>
   );
 };
