@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import "../pages/global.css";
 import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
+import Navbar from "@/components/Navbar";
 export const metadata: Metadata = {
   title: "Lost Ark Nexus",
   description: "Lost Ark Nexus",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html>
       <body style={{ backgroundColor: "#141418" }}>
         <Providers>
+        <Navbar/>
           {children}
           <Footer />
         </Providers>

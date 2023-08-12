@@ -5,14 +5,8 @@ import HeroSectionImages from "./HeroSectionImages";
 import HeroSectionRoot from "./HeroSectionRoot";
 import { useRef } from "react";
 
-interface HeroSectionProps {
-  setShowAboutUs: (aboutUs: boolean) => void;
-  showAboutUs: boolean;
-  setShowHeroSection: (aboutUs: boolean) => void;
-  showHeroSection: boolean;
-}
 
-export default function HeroSection({ setShowAboutUs, showAboutUs, setShowHeroSection, showHeroSection }: HeroSectionProps) {
+export default function HeroSection() {
   const classArray = Object.values(classData);
   const randomClassRef = useRef(classArray[Math.floor(Math.random() * classArray.length)]);
   const randomClass = randomClassRef.current;
@@ -20,13 +14,7 @@ export default function HeroSection({ setShowAboutUs, showAboutUs, setShowHeroSe
 
   return (
     <HeroSectionRoot>
-      <HeroSectionContent
-        randomClass={randomClass}
-        showAboutUs={showAboutUs}
-        showHeroSection={showHeroSection}
-        setShowAboutUs={setShowAboutUs}
-        setShowHeroSection={setShowHeroSection}
-      >
+      <HeroSectionContent randomClass={randomClass}>
         <HeroSectionImages bg={randomClass.bg} name={randomClass.name} color={randomClass.color} icon={randomClass.icon} />
       </HeroSectionContent>
     </HeroSectionRoot>
