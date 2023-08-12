@@ -59,7 +59,6 @@ export default function HeroSectionContent({
               bg={randomClass.color}
               color={"#ffffff"}
               _hover={{ bg: randomClass.hover }}
-              //onClick={handleAboutUsClick}
               as={Link}
               href='/AboutUs'
             >
