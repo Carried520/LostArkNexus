@@ -61,11 +61,11 @@ const Navbar: React.FC = () => {
                             key={index.toString()}
                             className={cn("cursor-pointer hover:underline")}
                             onClick={() => {
-                              router.push(`/classPage/${filteredClassItem.name}`)
+                              router.push(`/guides/${filteredClassItem.name}`)
                               setMenuOpen(false);
                             }}
                             onTouchEnd={() => {
-                              router.push(`/classPage/${filteredClassItem.name}`)
+                              router.push(`/guides/${filteredClassItem.name}`)
                               setMenuOpen(false);
                             }}
                           >
