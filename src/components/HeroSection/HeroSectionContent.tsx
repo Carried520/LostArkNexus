@@ -60,7 +60,7 @@ export default function HeroSectionContent() {
             >
               About Us
             </Button>
-              <Button as={Link} className="bg-white" href='https://discord.gg/lostark' rounded={"full"} size={"lg"} px={6} leftIcon={<FaDiscord color={"gray.300"} style={{ fontSize: "24px" }} />}>
+              <Button as={Link} className="bg-white text-black" href='https://discord.gg/lostark' rounded={"full"} size={"lg"} px={6} leftIcon={<FaDiscord color={"gray.300"} style={{ fontSize: "24px" }} />}>
                 Discord
               </Button>
           </Stack>

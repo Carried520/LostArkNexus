@@ -29,7 +29,7 @@ export default function Footer() {
             </Text>
             <Stack direction={"row"} spacing={2}>
               <SocialButton label={"Discord"} href={"https://discord.gg/lostark"}>
-                <FaDiscord size={'xs'} />
+                <FaDiscord/>
               </SocialButton>
             </Stack>
           </Container>
