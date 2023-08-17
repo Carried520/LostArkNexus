@@ -1,4 +1,4 @@
-'use client'
+
 import React, { useState } from 'react';
 import { useTransition, animated } from 'react-spring';
 import { Box } from '@chakra-ui/react';
@@ -13,11 +13,11 @@ export default function HeroSectionImages() {
   const [randomClass , updateClass] = useStore((state) => [state.randomClass , state.updateClass]);
   const transitions = useTransition(showComponent, {
     from: { opacity: 0},
-    enter: { opacity: 1,
+    enter: { opacity: 1},
     leave: { opacity: 0},
     config: { duration: 2000 },
     reset : true
-  }});
+  });
 
   return (
     <div className="flex">

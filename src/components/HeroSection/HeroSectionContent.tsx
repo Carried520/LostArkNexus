@@ -19,9 +19,6 @@ type randomClassType = {
     linkdescription: string;
   }[];
 };
-type HeroSectionContentProps = {
-  randomClass: randomClassType;
-};
 
 export default function HeroSectionContent() {
 
@@ -63,7 +60,7 @@ export default function HeroSectionContent() {
             >
               About Us
             </Button>
-              <Button as={Link} href='https://discord.gg/lostark' rounded={"full"} size={"lg"} px={6} leftIcon={<FaDiscord color={"gray.300"} style={{ fontSize: "24px" }} />}>
+              <Button as={Link} className="bg-white" href='https://discord.gg/lostark' rounded={"full"} size={"lg"} px={6} leftIcon={<FaDiscord color={"gray.300"} style={{ fontSize: "24px" }} />}>
                 Discord
               </Button>
           </Stack>
