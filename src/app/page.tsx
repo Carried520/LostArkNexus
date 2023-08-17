@@ -1,4 +1,3 @@
-"use client";
 import HeroSection from "@/components/HeroSection/HeroSection";
 
 export default function Page() {

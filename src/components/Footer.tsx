@@ -1,35 +1,11 @@
 "use client";
 
-import { Box, Button, Container, Stack, Text, VisuallyHidden } from "@chakra-ui/react";
+import { Box , Container, Stack, Text } from "@chakra-ui/react";
 import { FaDiscord } from "react-icons/fa";
-import { ReactNode } from "react";
 import { motion } from "framer-motion";
+import SocialButton from "./SocialButton";
 
-const SocialButton = ({ children, label, href }: { children: ReactNode; label: string; href: string }) => {
-  return (
-    <Button
-      className="bg-[#ffffff]"
-      color="#141418"
-      rounded={"full"}
-      w={30}
-      h={30}
-      cursor={"pointer"}
-      as={"a"}
-      href={href}
-      display={"inline-flex"}
-      alignItems={"center"}
-      justifyContent={"center"}
-      transition={"background 0.3s ease"}
-      _hover={{
-        bg: "blackAlpha.200",
-        color: "#ffffff",
-      }}
-    >
-      <VisuallyHidden>{label}</VisuallyHidden>
-      {children}
-    </Button>
-  );
-};
+
 
 export default function Footer() {
   return (
@@ -53,7 +29,7 @@ export default function Footer() {
             </Text>
             <Stack direction={"row"} spacing={2}>
               <SocialButton label={"Discord"} href={"https://discord.gg/lostark"}>
-                <FaDiscord />
+                <FaDiscord/>
               </SocialButton>
             </Stack>
           </Container>

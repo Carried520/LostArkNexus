@@ -1,22 +1,32 @@
 "use client";
-import dynamic from "next/dynamic";
 import classData from "../../data/classData.json";
-import HeroSectionImages from "./HeroSectionImages";
-import HeroSectionRoot from "./HeroSectionRoot";
-import { useRef } from "react";
+import { useEffect} from "react";
+import dynamic from "next/dynamic";
+import { Container } from "@chakra-ui/react";
+import HeroSectionContent from "./HeroSectionContent";
+import { useRandomClass } from "@/Store/RandomClassStore";
 
 
 export default function HeroSection() {
   const classArray = Object.values(classData);
-  const randomClassRef = useRef(classArray[Math.floor(Math.random() * classArray.length)]);
-  const randomClass = randomClassRef.current;
-  const HeroSectionContent = dynamic(() => import("./HeroSectionContent"), { ssr: false });
+  const DELAY_IN_MILISECONDS = 30_000;  
+  const [ , updateClass] = useRandomClass((state) => [state.randomClass , state.updateClass]);
+  const HeroSectionImages = dynamic(() => import('./HeroSectionImages') , {ssr : false })
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      updateClass({randomClass : classArray[Math.floor(Math.random() * classArray.length)]});
+    }, DELAY_IN_MILISECONDS);
+
+    return () => clearInterval(intervalId);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
 
   return (
-    <HeroSectionRoot>
-      <HeroSectionContent randomClass={randomClass}>
-        <HeroSectionImages bg={randomClass.bg} name={randomClass.name} color={randomClass.color} icon={randomClass.icon} />
-      </HeroSectionContent>
-    </HeroSectionRoot>
+    <Container maxW={"85%"} minH={"60rem"} py={"60px"}>
+        <HeroSectionContent/>
+        <HeroSectionImages/>
+    </Container>
+    
   );
 }
