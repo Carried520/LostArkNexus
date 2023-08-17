@@ -214,9 +214,9 @@
           "linkdescription": "This is the community guide."
         },
         {
-          "link": "/scrapper/shock-calc",
-          "linkname": "Shock Engraving Calculator",
-          "linkdescription": "This is the Shock Training Engraving Calculator."
+          "link": "/scrapper/setup-calc",
+          "linkname": "Engraving Calculator",
+          "linkdescription": "Compare 2 Shock Training or Taijutsu setups."
         }     
       ]
     },

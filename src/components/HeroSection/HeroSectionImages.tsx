@@ -37,7 +37,7 @@ export default function HeroSectionImages() {
               <Image
                 className="object-contain"
                 src={randomClass.bg}
-                priority
+                priority={true}
                 alt={'class-image'}
                 fill
               />
