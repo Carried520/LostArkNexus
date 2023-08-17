@@ -3,14 +3,14 @@ import React, { useState } from 'react';
 import { useTransition, animated } from 'react-spring';
 import { Box } from '@chakra-ui/react';
 import Image from 'next/image';
-import { useStore } from '@/Store/RandomClassStore';
+import { useRandomClass } from '@/Store/RandomClassStore';
 
 
 
 export default function HeroSectionImages() {
   const [showComponent] = useState(true);
 
-  const [randomClass , updateClass] = useStore((state) => [state.randomClass , state.updateClass]);
+  const [randomClass , updateClass] = useRandomClass((state) => [state.randomClass , state.updateClass]);
   const transitions = useTransition(showComponent, {
     from: { opacity: 0},
     enter: { opacity: 1},

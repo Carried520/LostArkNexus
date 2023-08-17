@@ -1,28 +1,12 @@
 "use client";
-import { useStore } from "@/Store/RandomClassStore";
+import { useRandomClass } from "@/Store/RandomClassStore";
 import { Button, Container, Heading, Stack, Text } from "@chakra-ui/react";
 import Link from "next/link";
-import { useEffect } from "react";
 import { FaDiscord } from "react-icons/fa";
-
-type randomClassType = {
-  name: string;
-  description: string;
-  base: string;
-  bg: string;
-  icon: string;
-  color: string;
-  hover: string;
-  links: {
-    link: string;
-    linkname: string;
-    linkdescription: string;
-  }[];
-};
 
 export default function HeroSectionContent() {
 
-  const [randomClass] = useStore((state) => [state.randomClass , state.updateClass]);
+  const [randomClass] = useRandomClass((state) => [state.randomClass , state.updateClass]);
   
   return (
     

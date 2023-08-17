@@ -7,7 +7,7 @@ const getRandomClass = () => {
     return classArray[Math.floor(Math.random() * classArray.length)]
 }
 
-type RandomClass = typeof classArray[0];
+type RandomClass = typeof classArray[number];
 
 
 type RandomClassState = {
@@ -18,7 +18,7 @@ type RandomClassAction = {
     updateClass : (state : RandomClassState) => void
 }
 
-export const useStore = create<RandomClassState & RandomClassAction>((set) => ({
+export const useRandomClass = create<RandomClassState & RandomClassAction>((set) => ({
   randomClass: getRandomClass(),
   updateClass: () => set(() => ({randomClass : getRandomClass()})),
 }))

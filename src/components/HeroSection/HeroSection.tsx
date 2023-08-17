@@ -4,13 +4,13 @@ import { useEffect} from "react";
 import dynamic from "next/dynamic";
 import { Container } from "@chakra-ui/react";
 import HeroSectionContent from "./HeroSectionContent";
-import { useStore } from "@/Store/RandomClassStore";
+import { useRandomClass } from "@/Store/RandomClassStore";
 
 
 export default function HeroSection() {
   const classArray = Object.values(classData);
   const DELAY_IN_MILISECONDS = 30_000;  
-  const [ , updateClass] = useStore((state) => [state.randomClass , state.updateClass]);
+  const [ , updateClass] = useRandomClass((state) => [state.randomClass , state.updateClass]);
   const HeroSectionImages = dynamic(() => import('./HeroSectionImages') , {ssr : false })
   useEffect(() => {
     const intervalId = setInterval(() => {
