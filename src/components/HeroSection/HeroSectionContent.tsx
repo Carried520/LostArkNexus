@@ -1,6 +1,8 @@
 "use client";
+import { useStore } from "@/Store/RandomClassStore";
 import { Button, Container, Heading, Stack, Text } from "@chakra-ui/react";
 import Link from "next/link";
+import { useEffect } from "react";
 import { FaDiscord } from "react-icons/fa";
 
 type randomClassType = {
@@ -18,18 +20,15 @@ type randomClassType = {
   }[];
 };
 type HeroSectionContentProps = {
-  children: React.ReactNode;
   randomClass: randomClassType;
 };
 
-export default function HeroSectionContent({
-  children,
-  randomClass,
-}: HeroSectionContentProps) {
+export default function HeroSectionContent() {
 
+  const [randomClass] = useStore((state) => [state.randomClass , state.updateClass]);
+  
   return (
-    <Container maxW={"85%"} minH={"60rem"} py={"60px"}>
-      {children}
+    
       <Stack align={"center"} spacing={{ base: 8, md: 10 }} py={{ base: 20, md: 28 }} direction={{ base: "column", md: "row" }}>
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Heading lineHeight={1.1} fontWeight={700} fontSize={{ base: "3xl", sm: "4xl", lg: "5xl", xl: "7xl" }} color="#ffffff" style={{ userSelect: "none" }}>
@@ -64,14 +63,11 @@ export default function HeroSectionContent({
             >
               About Us
             </Button>
-            <a href="https://discord.gg/lostark">
-              <Button rounded={"full"} size={"lg"} px={6} leftIcon={<FaDiscord color={"gray.300"} style={{ fontSize: "24px" }} />}>
+              <Button as={Link} href='https://discord.gg/lostark' rounded={"full"} size={"lg"} px={6} leftIcon={<FaDiscord color={"gray.300"} style={{ fontSize: "24px" }} />}>
                 Discord
               </Button>
-            </a>
           </Stack>
         </Stack>
       </Stack>
-    </Container>
   );
 }
