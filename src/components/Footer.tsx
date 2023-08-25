@@ -2,15 +2,13 @@
 
 import { Box , Container, Stack, Text } from "@chakra-ui/react";
 import { FaDiscord } from "react-icons/fa";
-import { motion } from "framer-motion";
 import SocialButton from "./SocialButton";
 
 
 
 export default function Footer() {
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.9 }}>
-      <Box bg="#010101" color="grey" fontFamily={"Nunito Sans"} position="fixed" bottom="0" minW="100%" z-index="9999">
+      <Box bg="#010101" color="grey" fontFamily={"Nunito Sans"} position='fixed'  bottom={'0%'} minW="100%"  z-index="9999">
         <Box>
           <Container
             as={Stack}
@@ -35,6 +33,5 @@ export default function Footer() {
           </Container>
         </Box>
       </Box>
-    </motion.div>
   );
 }

@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs/promises";
 async function getRaidsFolder(dirName : string) {
-  const destinationDir = "raids";
+  const destinationDir = "raid";
   const dir = path.resolve("./public/", destinationDir);
   const entries = await fs.readdir(dir);
   const matchingSubdirectory = entries.find(async (entry) => {
