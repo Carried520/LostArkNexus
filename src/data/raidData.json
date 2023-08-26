@@ -1,0 +1,15 @@
+{
+  "Akkan": {
+    "raid": "Akkan",
+    "links": [
+        {
+          "link": "/raids/akkan/breakdown",
+          "linkname": "Breakdown"
+        },
+        {
+          "link": "/raids/akkan/cheatsheat",
+          "linkname": "Cheatsheat"
+        }
+      ]
+    }
+}

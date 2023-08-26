@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import classData from "../data/classData.json";
+import raidData from "../data/raidData.json";
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
@@ -22,7 +23,7 @@ const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   const classArray = Object.values(classData);
-  const categoryMap = classArray.reduce((map, classItem) => {
+  const categoryClassMap = classArray.reduce((map, classItem) => {
     const { base } = classItem;
     if (!map.has(base)) {
       map.set(base, [classItem]);
@@ -31,6 +32,18 @@ const Navbar: React.FC = () => {
     }
     return map;
   }, new Map());
+
+  const raidArray = Object.values(raidData);
+  const categoryRaidMap = raidArray.reduce((map, raidItem) => {
+  const { raid } = raidItem;
+  if (!map.has(raid)) {
+    map.set(raid, [raidItem]);
+  } else {
+    map.get(raid).push(raidItem);
+  }
+  return map;
+}, new Map());
+
 
   return (
     <NavigationMenu className="ml-8 my-6">
@@ -47,11 +60,11 @@ const Navbar: React.FC = () => {
           />
         </NavigationMenuItem>
         <NavigationMenuItem  onMouseEnter={() => setMenuOpen(true)} onTouchStart={() => setMenuOpen(!menuOpen)}>
-          <NavigationMenuTrigger onPointerMove={(e) => e.preventDefault()} onPointerLeave={(e) => e.preventDefault()} className="text-foreground font-cla  ssSubheader text-lg">Guides</NavigationMenuTrigger>
+          <NavigationMenuTrigger onPointerMove={(e) => e.preventDefault()} onPointerLeave={(e) => e.preventDefault()} className="text-foreground font-cla  ssSubheader text-lg">Class Guides</NavigationMenuTrigger>
           {menuOpen && (
             <NavigationMenuContent onPointerMove={(e) => e.preventDefault()} onPointerLeave={(e) => e.preventDefault()}  data-state={menuOpen}>
               <ul className="grid w-[300px] gap-3 p-4 md:w-[300px] lg:w-[300px]">
-                {Array.from(categoryMap.entries()).map(([category, filteredClasses]) => (
+                {Array.from(categoryClassMap.entries()).map(([category, filteredClasses]) => (
                   <Accordion key={category} type="single" collapsible>
                     <AccordionItem value={category} className="text-sm leading-tight text-foreground">
                       <AccordionTrigger>{category}</AccordionTrigger>
@@ -79,6 +92,47 @@ const Navbar: React.FC = () => {
               </ul>
             </NavigationMenuContent>
           )}
+        </NavigationMenuItem>
+        <NavigationMenuItem onMouseEnter={() => setMenuOpen(true)} onTouchStart={() => setMenuOpen(!menuOpen)}>
+          <NavigationMenuTrigger onPointerMove={(e) => e.preventDefault()} onPointerLeave={(e) => e.preventDefault()} className="text-foreground font-cla  ssSubheader text-lg">Raid Guides</NavigationMenuTrigger>
+          {menuOpen && (
+            <NavigationMenuContent onPointerMove={(e) => e.preventDefault()} onPointerLeave={(e) => e.preventDefault()}  data-state={menuOpen}>
+              <ul className="grid w-[300px] gap-3 p-4 md:w-[300px] lg:w-[300px]">
+                {Array.from(categoryRaidMap.entries()).map(([category, filteredRaids]) => (
+                  <Accordion key={category} type="single" collapsible>
+                    <AccordionItem value={category} className="text-sm leading-tight text-foreground">
+                      <AccordionTrigger>{category}</AccordionTrigger>
+                      <AccordionContent>
+                        {filteredRaids.map((filteredRaidItem: { raid: string, links: { link: string, linkname: string }[] }, index: number) => (
+                          <div key={index.toString()}>
+                            {filteredRaidItem.links.map((linkItem: { link: string, linkname: string }, linkIndex: number) => (
+                              <p
+                                key={linkIndex.toString()}
+                                className={cn("cursor-pointer hover:underline")}
+                                onClick={() => {
+                                router.push(linkItem.link)
+                                setMenuOpen(false);
+                            }}
+                          onTouchEnd={() => {
+                          router.push(linkItem.link)
+                          setMenuOpen(false);
+                        }}>
+                      {linkItem.linkname}
+                    </p>
+                  ))}
+                </div>
+              ))}
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+      ))}
+    </ul>
+  </NavigationMenuContent>
+)}
+
+
+
+
         </NavigationMenuItem>
 
         <NavigationMenuItem  className={`text-foreground font-classSubheader text-lg ${navigationMenuTriggerStyle()}`}>
