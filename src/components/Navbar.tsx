@@ -100,12 +100,12 @@ const Navbar: React.FC = () => {
                             ) => (
                               <div
                                 key={index.toString()}
-                                className="mb-2 flex items-center overflow-hidden"
+                                className="mb-2 flex items-center"
                               >
-                                <div className="relative mr-1 flex h-5 w-5 items-center justify-center overflow-hidden">
+                                <div className="relative mr-1 flex h-5 w-6 items-center justify-center">
                                   <Image
                                     fill
-                                    object-objectFit="cover"
+                                    objectFit="contain"
                                     src={filteredClassItem.icon}
                                     alt={filteredClassItem.name}
                                   />
