@@ -8,5 +8,15 @@
         "name" : "musicbox",
         "aliases" : [],
         "link" : "https://docs.google.com/spreadsheets/d/1CWztgkMhVnRj08we9YZP_tDBTQgd5Bs9NkvBlHLrx54/edit?usp=sharing"
+    },
+    {
+        "name" : "bracelet",
+        "aliases" : [],
+        "link" : "https://docs.google.com/spreadsheets/d/1CsiBFCcX_dIAZJ0y8vOlvfqNnOAvYzhqJzpHHEDyxwI/"
+    },
+    {
+        "name" : "engraving",
+        "aliases" : [],
+        "link" : "https://docs.google.com/spreadsheets/d/1X86L3-Qz9kWsv0K-G_wgHOM7ET77vPCgzY6i4-uKaXM/"
     }
 ]
