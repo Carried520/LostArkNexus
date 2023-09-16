@@ -8,10 +8,15 @@ export async function generateMetadata({
   params: { className: string };
 }): Promise<Metadata> {
   const { name, description, color } = getClassInfo(params.className);
+  const title = `Lost Ark Nexus | ${name} Guide`;
   return {
-    title: `Lost Ark Nexus | ${name} Guide`,
+    title: title,
     description: description,
     themeColor: color,
+    openGraph: {
+      title: title,
+      description: description,
+    },
   };
 }
 
