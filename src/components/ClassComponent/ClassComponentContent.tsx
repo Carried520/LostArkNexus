@@ -9,10 +9,15 @@ type ContentProps = {
   selectedClass: string;
 };
 
-export default function ClassComponentContent({ selectedClass }: ContentProps) {
-  if (!(selectedClass in classData)) return;
+export const getClassInfo = (selectedClass: string) => {
   const selectedKey = selectedClass as keyof typeof classData;
   const { name, description, icon, color, links } = classData[selectedKey];
+  return { name, description, icon, color, links };
+};
+
+export default function ClassComponentContent({ selectedClass }: ContentProps) {
+  if (!(selectedClass in classData)) return;
+  const { name, description, icon, color, links } = getClassInfo(selectedClass);
   return (
     <div className="grid h-screen grid-cols-3">
       <div className="md relative 2xs:col-span-3 sm:col-span-2">
