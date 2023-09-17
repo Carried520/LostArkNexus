@@ -18,9 +18,9 @@ export async function generateMetadata(
     description: description,
     themeColor: color,
     openGraph: {
+      ...parentOpenGraph,
       title: title,
       description: description,
-      ...parentOpenGraph,
     },
   };
 }
