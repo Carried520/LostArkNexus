@@ -2,18 +2,23 @@ import ClassComponent from "@/components/ClassComponent/ClassComponent";
 import { getClassInfo } from "@/components/ClassComponent/ClassComponentContent";
 import { ResolvingMetadata, Metadata } from "next";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { className: string };
-}): Promise<Metadata> {
+export async function generateMetadata(
+  {
+    params,
+  }: {
+    params: { className: string };
+  },
+  parent: ResolvingMetadata
+): Promise<Metadata> {
   const { name, description, color } = getClassInfo(params.className);
   const title = `Lost Ark Nexus | ${name} Guide`;
+  const parentOpenGraph = (await parent).openGraph || {};
   return {
     title: title,
     description: description,
     themeColor: color,
     openGraph: {
+      ...parentOpenGraph,
       title: title,
       description: description,
     },
