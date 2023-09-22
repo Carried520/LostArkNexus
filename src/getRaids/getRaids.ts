@@ -19,17 +19,9 @@ async function getRaidsFolder(dirName : string) {
   }
 }
 
+export async function getRaidSheets(){
 
- async function getRaidInfo(dirName : string){
-
-    const sheets = await getRaidSheets(dirName);
-    return sheets ? sheets : getRaidGateImages(dirName);
-}
-
-export async function getRaidSheets(dirName : string){
-
-  const raidArray = data.filter(item => item.raid.toLowerCase() == dirName.toLowerCase());
-  const recordOfRaidSheets = raidArray.reduce((acc : Record<string,string> , item) => {
+  const recordOfRaidSheets = data.reduce((acc : Record<string,string> , item) => {
 
     const indexer = item.name;
     acc[indexer] = item.link;
