@@ -11,3 +11,4 @@ export default async function Raids({
   if (!raids) return notFound();
   redirect(`/raid/${raidName.toLowerCase()}/${raids[query.toLowerCase()]}`);
 }
+

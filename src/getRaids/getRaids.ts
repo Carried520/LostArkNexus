@@ -22,7 +22,7 @@ async function getRaidsFolder(dirName : string) {
 export async function getRaidSheets(){
 
   const recordOfRaidSheets = data.reduce((acc : Record<string,string> , item) => {
-
+    
     const indexer = item.name;
     acc[indexer] = item.link;
       return acc;
