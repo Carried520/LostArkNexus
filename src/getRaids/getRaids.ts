@@ -1,5 +1,6 @@
 import path from "path";
 import fs from "fs/promises";
+import data from './raids.json'
 async function getRaidsFolder(dirName : string) {
   const destinationDir = "raid";
   const dir = path.resolve("./public/", destinationDir);
@@ -18,7 +19,28 @@ async function getRaidsFolder(dirName : string) {
   }
 }
 
-export default async function getRaidGateImages(dirName : string){
+
+ async function getRaidInfo(dirName : string){
+
+    const sheets = await getRaidSheets(dirName);
+    return sheets ? sheets : getRaidGateImages(dirName);
+}
+
+export async function getRaidSheets(dirName : string){
+
+  const raidArray = data.filter(item => item.raid.toLowerCase() == dirName.toLowerCase());
+  const recordOfRaidSheets = raidArray.reduce((acc : Record<string,string> , item) => {
+
+    const indexer = item.name;
+    acc[indexer] = item.link;
+      return acc;
+  } , {})
+
+  return recordOfRaidSheets;
+ 
+}
+
+export async function getRaidGateImages(dirName : string){
     const dir = await getRaidsFolder(dirName);
     if(!dir)
         return null;
