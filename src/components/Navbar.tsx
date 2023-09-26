@@ -140,84 +140,10 @@ const Navbar: React.FC = () => {
           )}
         </NavigationMenuItem>
         <NavigationMenuItem
-          onMouseEnter={() => setMenuOpen(true)}
-          onTouchStart={() => setMenuOpen(!menuOpen)}
+          className={`font-classSubheader text-lg text-foreground ${navigationMenuTriggerStyle()}`}
         >
-          <NavigationMenuTrigger
-            onPointerMove={(e) => e.preventDefault()}
-            onPointerLeave={(e) => e.preventDefault()}
-            className="font-cla ssSubheader  text-lg text-foreground"
-          >
-            Raid Guides
-          </NavigationMenuTrigger>
-          {menuOpen && (
-            <NavigationMenuContent
-              style={{ left: "200px" }}
-              onPointerMove={(e) => e.preventDefault()}
-              onPointerLeave={(e) => e.preventDefault()}
-              data-state={menuOpen}
-            >
-              <ul className="grid w-[300px] gap-3 p-4 md:w-[300px] lg:w-[300px]">
-                {Array.from(categoryRaidMap.entries()).map(
-                  ([category, filteredRaids]) => (
-                    <Accordion key={category} type="single" collapsible>
-                      <AccordionItem
-                        value={category}
-                        className="text-sm leading-tight text-foreground"
-                      >
-                        <AccordionTrigger>{category}</AccordionTrigger>
-                        <AccordionContent>
-                          {filteredRaids.map(
-                            (
-                              filteredRaidItem: {
-                                raid: string;
-                                links: {
-                                  link: string;
-                                  linkname: string;
-                                }[];
-                              },
-                              index: number
-                            ) => (
-                              <div key={index.toString()}>
-                                {filteredRaidItem.links.map(
-                                  (
-                                    linkItem: {
-                                      link: string;
-                                      linkname: string;
-                                    },
-                                    linkIndex: number
-                                  ) => (
-                                    <p
-                                      key={linkIndex.toString()}
-                                      className={cn(
-                                        "cursor-pointer hover:underline"
-                                      )}
-                                      onClick={() => {
-                                        router.push(linkItem.link);
-                                        setMenuOpen(false);
-                                      }}
-                                      onTouchEnd={() => {
-                                        router.push(linkItem.link);
-                                        setMenuOpen(false);
-                                      }}
-                                    >
-                                      {linkItem.linkname}
-                                    </p>
-                                  )
-                                )}
-                              </div>
-                            )
-                          )}
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
-                  )
-                )}
-              </ul>
-            </NavigationMenuContent>
-          )}
+          <Link href="/info/jumpstart">Jumpstart</Link>
         </NavigationMenuItem>
-
         <NavigationMenuItem
           className={`font-classSubheader text-lg text-foreground ${navigationMenuTriggerStyle()}`}
         >
