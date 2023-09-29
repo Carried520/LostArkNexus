@@ -12,8 +12,8 @@ export async function GET(request: Request) {
     projectId : process.env.PROJECT_ID,
     credentials : {
       client_id : process.env.CLIENT_ID,
-      client_email : process.env.CLIENT_EMAIL,
-      private_key : process.env.PRIVATE_KEY
+      private_key : process.env.PRIVATE_KEY,
+      client_email : process.env.CLIENT_EMAIL
       
     },
     scopes: [
