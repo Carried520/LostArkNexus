@@ -2,13 +2,20 @@ import fs from "fs/promises";
 import { google } from "googleapis";
 import { NextResponse } from "next/server";
 import { parse } from "node-html-parser";
+import path from "path";
 
 export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
   const folderId = "15bY2XReP3Qre2BuwdvUkozmU2J6ADHlN";
   const auth = new google.auth.GoogleAuth({
-    keyFile: "src/app/generateSnapshot/googleApiCredentials.json",
+    projectId : process.env.PROJECT_ID,
+    credentials : {
+      client_id : process.env.CLIENT_ID,
+      client_email : process.env.CLIENT_EMAIL,
+      private_key : process.env.PRIVATE_KEY
+      
+    },
     scopes: [
       "https://www.googleapis.com/auth/drive",
       "https://www.googleapis.com/auth/drive.appdata",
