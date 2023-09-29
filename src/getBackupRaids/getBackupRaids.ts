@@ -9,7 +9,7 @@ async function getSnapShotDir(){
 export default async function getBackupGuides(){
     
     const filesInFolder = await fs.readdir(await getSnapShotDir());
-    const recordOfSnapshots = filesInFolder.reduce((acc : Record<string,string> , item) => {
+    const recordOfSnapshots = filesInFolder.filter(file => path.parse(file).ext == '.html').reduce((acc : Record<string,string> , item) => {
         const fileName = path.parse(item).name;
         const indexer = fileName.slice(0 , fileName.indexOf(" ")).toLowerCase();
         acc[indexer] = item;   
