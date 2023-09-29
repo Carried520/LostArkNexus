@@ -1,3 +1,4 @@
+import { error } from "console";
 import fs from "fs/promises";
 import { google } from "googleapis";
 import { NextResponse } from "next/server";
@@ -8,12 +9,16 @@ export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
   const folderId = "15bY2XReP3Qre2BuwdvUkozmU2J6ADHlN";
+  if(!process.env.ENCODED_GOOGLE_JSON)
+    throw error("Couldn't parse env variable");
+  const credentials = JSON.parse(atob(process.env.ENCODED_GOOGLE_JSON));
+
   const auth = new google.auth.GoogleAuth({
-    projectId : process.env.PROJECT_ID,
+    projectId : credentials.project_id,
     credentials : {
-      client_id : process.env.CLIENT_ID,
-      private_key : process.env.PRIVATE_KEY,
-      client_email : process.env.CLIENT_EMAIL
+      client_id : credentials.client_id,
+      private_key : credentials.private_key,
+      client_email : credentials.client_email
       
     },
     scopes: [
