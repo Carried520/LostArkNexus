@@ -1,5 +1,5 @@
 import getBackupGuides from '@/getBackupRaids/getBackupRaids';
-import { notFound, redirect } from 'next/navigation';
+import { redirect } from 'next/navigation';
 
 export default async function GeneralRaidInfo({
   params,
@@ -7,10 +7,7 @@ export default async function GeneralRaidInfo({
   params: { className: string };
 }) {
     const guides = await getBackupGuides();
-    if(params.className in guides){
-        redirect(`/snapshots/${guides[params.className.toLowerCase()]}`);
-    }
-    return notFound();
+    redirect(`/snapshots/${guides[params.className.toLowerCase()]}`);
     
 }
 
