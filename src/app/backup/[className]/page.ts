@@ -1,5 +1,5 @@
 import fs from 'fs/promises'
-import { redirect } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import path from 'path';
 export default async function GeneralRaidInfo({
   params,
@@ -7,7 +7,11 @@ export default async function GeneralRaidInfo({
   params: { className: string };
 }) {
     const guides = await getBackupGuides();
-    redirect(`/snapshots/${guides[params.className.toLowerCase()]}`);
+    if(params.className in guides){
+        redirect(`/snapshots/${guides[params.className.toLowerCase()]}`);
+    }
+    return notFound();
+    
 }
 
 
