@@ -8,20 +8,17 @@ import path from "path";
 export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
-  try {
-    
-    const folderId = "15bY2XReP3Qre2BuwdvUkozmU2J6ADHlN";
-  if(!process.env.ENCODED_GOOGLE_JSON)
+  const folderId = "15bY2XReP3Qre2BuwdvUkozmU2J6ADHlN";
+  if (!process.env.ENCODED_GOOGLE_JSON)
     throw error("Couldn't parse env variable");
-  const credentials = JSON.parse(atob(process.env.ENCODED_GOOGLE_JSON));
+    const credentials = JSON.parse(process.env.ENCODED_GOOGLE_JSON);
 
   const auth = new google.auth.GoogleAuth({
-    projectId : credentials.project_id,
-    credentials : {
-      client_id : credentials.client_id,
-      private_key : credentials.private_key,
-      client_email : credentials.client_email
-      
+    projectId: credentials.project_id,
+    credentials: {
+      client_id: credentials.client_id,
+      private_key: credentials.private_key,
+      client_email: credentials.client_email,
     },
     scopes: [
       "https://www.googleapis.com/auth/drive",
@@ -62,13 +59,9 @@ export async function GET(request: Request) {
         element.setAttribute("referrerpolicy", "noreferrer")
       );
 
-    await fs.writeFile(`public/snapshots/${file.name}.html`, root!.toString());
+    await fs.writeFile(`public/snapshots/${file.name}.html`, html!.toString());
   });
 
   const returnType = response.data.files?.map((file) => file.name);
   return NextResponse.json({ returnType });
-  } catch (error) {
-    console.log(error);
-  }
-  
 }
