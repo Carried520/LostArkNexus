@@ -3,7 +3,7 @@ import fs from 'fs/promises'
 
 export default async function getBackupGuides(){
     const destinationDir = "snapshots";
-    const dir = path.resolve("./public/", destinationDir);
+    const dir = path.join("./public/", destinationDir);
     const filesInFolder = await fs.readdir(dir);
     const recordOfSnapshots = filesInFolder.reduce((acc : Record<string,string> , item) => {
         const fileName = path.parse(item).name;
