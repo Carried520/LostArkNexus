@@ -59,7 +59,7 @@ export async function GET(request: Request) {
         element.setAttribute("referrerpolicy", "noreferrer")
       );
 
-    await fs.writeFile(`public/snapshots/${file.name}.html`, html!.toString());
+    await fs.writeFile(`public/snapshots/${file.name}.html`, root!.toString());
   });
 
   const returnType = response.data.files?.map((file) => file.name);
