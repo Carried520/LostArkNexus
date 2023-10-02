@@ -152,9 +152,9 @@
     },
     {
         "className" : "souleater",
-        "slugs" : [],
-        "link" : "/",
-        "image" : ""
+        "slugs" : ["ghostplate", "se"],
+        "link" : "https://docs.google.com/document/d/1Da0MFsuencYbmcFMo6cUPBEGubavgsebeYtR7iCtaoQ/edit?usp=sharing",
+        "image" : "/Assassin_Souleater.png"
         
     },
     {
